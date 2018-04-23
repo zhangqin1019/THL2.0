@@ -1,0 +1,131 @@
+.log_all{width: 100%;min-height:840px;background-color: #2797c0;}
+.log_all_warp{width: 100%;min-height: 760px;margin: 0 auto;background: url(../images/medical.jpg) no-repeat center top;position: relative;} 
+.log_all_box{width: 601px;margin: 0 auto;position: absolute; top: 50px;left: 50%;right: 50%;margin-left: -300px;}  
+.log_all_f1:after{clear: both;content: "";display: table;}
+.log_all_f1{margin: 0 0 30px 0;height: 42px;}
+.log_all_f2{width: 490px;margin: 0 auto;background-color: #f3f4f4;min-height: 533px;-moz-border-radius: 10px;-webkit-border-radius:10px;border-radius:10px;position: relative;padding: 30px 50px 0px 50px;} 
+.log_all_f2 h3{font-size: 24px;color:#2ba8d6;margin-bottom: 30px;}
+.log_all_f2 p{margin-bottom: 10px;color:#9b9a9a;font-size: 16px;}
+.log_border{width: 465px;height: 46px; line-height: 46px;border: 1px #dddddd solid;-moz-border-radius: 10px;-webkit-border-radius:10px;border-radius:10px;cursor: text;}
+.log_border b{background: url(../images/med-icon.png) no-repeat;width: 25px;height: 25px;display: block;float:left;margin:10px 10px 0 10px;}
+.log_password b{background-position: 0 -29px;}
+.log_border input{float: left;width: 390px;margin: 12px 0 0 0;border: none;color:#3c3c3c;background: none;}
+.log_code .log_border{width: 157px;position: relative;padding-left: 10px;}
+.log_code input{width: 230px;}
+.log_username{margin-bottom: 30px;}
+.log_password{margin-bottom: 30px;margin-bottom: 22px\9;*margin-bottom: 16px;}
+.log_code_pic{position: absolute;right: -130px;top:-3px;height: 48px;line-height: 48px; width: 100px;}
+.log_code_pic img{height: 48px;width:100%;cursor: pointer;}
+.log_tip{width:465px;margin-top: 5px;font-size: 14px;color: #9b9a9a;}
+.log_tip:after{clear: both;content: "";display: table;}
+.log_tip b{width: 25px;height: 25px;display: inline-block;background: url(../images/med-icon.png) no-repeat 0px -55px;vertical-align: middle;}
+.log_tip span{text-align: right;}
+.log_tip a{color:#9b9a9a;float: right;}
+.log_tip a:hover{color:#2ba8d6;}
+.log_tip b input{filter:alpha(opacity=0); -moz-opacity:0; -khtml-opacity:0; opacity: 0;}
+.log_tip label{cursor: pointer;*float: left;}
+.log_tip_noclick b{background: url(../images/noclick.png) 3px 4px no-repeat!important;}
+.log_submit{margin-top: 40px;}
+.log_submit input{background-color:#2ba8d6;width: 465px;height: 48px;color: #fff;font-size: 20px;border-radius: 10px;}
+.log_submit input:hover{filter:alpha(opacity=90); -moz-opacity:0.9; -khtml-opacity:0.9; opacity: 0.9;}
+.log_server{margin-top: 30px;padding-bottom: 30px;width: 465px;}
+.log_server a{font-size: 14px;color: #9b9a9a;}
+.log_server a:hover{color: #2ba8d6;}
+.log_server .a-num{margin: 0px 110px;}
+.log_server .a-hover{color: #2ba8d6;text-decoration: underline;}
+.log-footer{text-align: center;margin:80px 0px 0px 0px;font-size: 12px;color: #3c3c3c;}
+.log-footer a{color: #fff;}
+/*以上是默认med医疗机构样式*/
+
+/*manu生产企业样式*/
+.manu{background-color: #24a9b2;}
+.manu .log_all_warp{background: url(../images/manufacture.jpg) no-repeat center top;} 
+.manu .log_all_f2 h3 {color: #28bdc6;}
+.manu .log_border b{background: url(../images/manu-icon.png) no-repeat;}
+.manu .log_tip label b{background: url(../images/manu-icon.png) no-repeat 0px -55px;}
+.manu .log_password b{background-position: 0 -29px;}
+.manu .log_tip a:hover{color: #28bdc6;}
+.manu .log_server a:hover{color: #28bdc6;}
+.manu .log_submit input{background-color: #28bdc6;}
+.manu .log_server .a-hover {color: #28bdc6;}
+
+/*dis配送企业样式*/
+.dis{background-color: #2cae85;}
+.dis .log_all_warp{background: url(../images/distribute.jpg) no-repeat center top;} 
+.dis .log_all_f2 h3 {color: #31c495;}
+.dis .log_border b{background: url(../images/dis-icon.png) no-repeat;}
+.dis .log_tip label b{background: url(../images/dis-icon.png) no-repeat 0px -55px;}
+.dis .log_password b{background-position: 0 -29px;}
+.dis .log_tip a:hover{color: #31c495;}
+.dis .log_server a:hover{color: #31c495;}
+.dis .log_submit input{background-color: #31c495;}
+.dis .log_server .a-hover {color: #31c495;}
+
+/*tax税局登录样式*/
+.tax{background-color: #3fb35c;}
+.tax .log_all_warp{background: url(../images/taxbureau.jpg) no-repeat center top;} 
+.tax .log_all_f2 h3 {color: #46c767;}
+.tax .log_border b{background: url(../images/tax-icon.png) no-repeat;}
+.tax .log_tip label b{background: url(../images/tax-icon.png) no-repeat 0px -55px;}
+.tax .log_password b{background-position: 0 -29px;}
+.tax .log_tip a:hover{color: #46c767;}
+.tax .log_server a:hover{color: #46c767;}
+.tax .log_submit input{background-color: #46c767;}
+.tax .log_server .a-hover {color: #46c767;}
+
+/*drug药监局登录样式*/
+.drug{background-color: #e59f44;}
+.drug .log_all_warp{background: url(../images/drug.jpg) no-repeat center top;} 
+.drug .log_all_f2 h3 {color: #e59f44;}
+.drug .log_border b{background: url(../images/drug-icon.png) no-repeat;}
+.drug .log_tip label b{background: url(../images/drug-icon.png) no-repeat 0px -55px;}
+.drug .log_password b{background-position: 0 -29px;}
+.drug .log_tip a:hover{color: #e59f44;}
+.drug .log_server a:hover{color: #e59f44;}
+.drug .log_submit input{background-color: #e59f44;}
+.drug .log_server .a-hover {color: #e59f44;} 
+
+/*hospital医院中心登录样式*/
+.hospital{background-color: #d9b54b;}
+.hospital .log_all_warp{background: url(../images/hospital.jpg) no-repeat center top;} 
+.hospital .log_all_f2 h3 {color: #f2ca54;}
+.hospital .log_border b{background: url(../images/hospital-icon.png) no-repeat;}
+.hospital .log_tip label b{background: url(../images/hospital-icon.png) no-repeat 0px -55px;}
+.hospital .log_password b{background-position: 0 -29px;}
+.hospital .log_tip a:hover{color: #f2ca54;}
+.hospital .log_server a:hover{color: #f2ca54;}
+.hospital .log_submit input{background-color: #f2ca54;}
+.hospital .log_server .a-hover {color: #f2ca54;} 
+
+/*health医保局登录样式*/
+.health{background-color: #a14ee0;}
+.health .log_all_warp{background: url(../images/health.jpg) no-repeat center top;} 
+.health .log_all_f2 h3 {color: #b357f9;}
+.health .log_border b{background: url(../images/health-icon.png) no-repeat;}
+.health .log_tip label b{background: url(../images/health-icon.png) no-repeat 0px -55px;}
+.health .log_password b{background-position: 0 -29px;}
+.health .log_tip a:hover{color: #b357f9;}
+.health .log_server a:hover{color: #b357f9;}
+.health .log_submit input{background-color: #b357f9;}
+.health .log_server .a-hover {color: #b357f9;} 
+
+/*backstage后台管理登录样式*/
+.backstage{background-color: #2868c1;}
+.backstage .log_all_box{width: 474px;margin-left: -237px;}
+.backstage .log_all_f2{width: 388px;padding: 30px 43px 0px 43px;}
+.backstage .log_border{width: 388px;}
+.backstage .log_border input{width: 335px;}
+.backstage .log_code .log_border{width: 160px;}
+.backstage .log_code input{width: 160px;}
+.backstage .log_tip{width: 388px;}
+.backstage .log_server{width: 388px;}
+.backstage .log_server .a-num{margin: 0px 66px;}
+.backstage .log_all_warp{background: url(../images/backstage.jpg) no-repeat center top;} 
+.backstage .log_all_f2 h3 {color: #2c74d7;}
+.backstage .log_border b{background: url(../images/back-icon.png) no-repeat;}
+.backstage .log_tip label b{background: url(../images/back-icon.png) no-repeat 0px -55px;}
+.backstage .log_password b{background-position: 0 -29px;}
+.backstage .log_tip a:hover{color: #2c74d7;}
+.backstage .log_server a:hover{color: #2c74d7;}
+.backstage .log_submit input{background-color: #2c74d7;width: 388px;}
+.backstage .log_server .a-hover {color: #2c74d7;} 

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>图表</title>
+	<link rel="stylesheet" type="text/css" href="../css/public.css"/><!-- 公告样式 -->
+	<link rel="stylesheet" type="text/css" href="../css/charts.css"/><!-- 页面样式 -->
+	<script type="text/javascript" src="../js/libs/jquery-1.8.3.min.js"></script><!-- 1.8.3jq库 -->
+	<script type="text/javascript" src="../js/module/run.js"></script><!-- 公告滚动js -->
+	<script type="text/javascript">
+		$(function(){
+            $('#ggao').vTicker({
+			    speed: 700,
+			    pause: 4000,
+			    animation: 'fade',
+			    mousePause: true,
+			    showItems: 1
+		    });
+	    });
+	</script>
+	<style type="text/css">html,body{background-color: #f3f3f3;}</style>
+</head>
+<body>
+	<div class="information">
+		<div class="inf-content fixed">
+			<div class="inf-run fixed">
+				<div class="inf-img">
+					<img src="../images/ggao.png"/>
+				</div>
+				<div class="inf-left" id="ggao">
+					<ul>
+						<li>
+							<a href="#">测试公告标题测试公告标题测试公告标题测试公告标题测试公告标题测试公告标题</a>
+						</li>
+						<li>
+							<a href="#">测试公告标题测试公告标题测试公告标题测试公告标题测试公告标题测试公告标题</a>
+						</li>
+						<li>
+							<a href="#">测试公告标题测试公告标题测试公告标题测试公告标题测试公告标题测试公告标题</a>
+						</li> 
+					</ul>
+				</div>
+			</div>
+			<div class="inf-right">
+				<a href="#">更多></a>
+			</div>
+		</div>
+	</div>
+	<div class="list-content">
+
+	</div>
+</body>
+</html>

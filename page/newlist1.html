@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>新建配送列表</title>
+	<link rel="stylesheet" type="text/css" href="../css/public.css"/><!-- 公告样式 -->
+	<link rel="stylesheet" type="text/css" href="../css/newlist.css"><!-- 页面样式 -->
+	<script type="text/javascript" src="../js/libs/jquery-1.8.3.min.js"></script><!-- jquery-1.8.3库 -->
+	<script type="text/javascript">
+		$(function(){
+			// 表格行选中背景变色
+		    $(".listd-table tr td input").on("click",function(){
+		        if($(this).is(':checked')) {
+		            $(this).closest("tr").addClass("checked_tr");
+		        }else{
+		            $(this).closest("tr").removeClass("checked_tr");
+		        }
+		    });
+		    //表格全选_取消全选
+		    $(".listd-table input:checkbox").attr("checked", false);
+		        //初始化,载入取消全选
+		        $(".listd-table .mar_rt").on("click",function(){
+		            if($(this).is(':checked')) {
+		          		$(".listd-table input:checkbox").attr("checked", true);
+		            }else{
+		          		$(".listd-table input:checkbox").attr("checked", false);
+		        }
+		    });
+		    //表格隔行换色
+	        $(".listd-table tr:odd").css("backgroundColor","#fbfeff");
+	        $(".listd-table tr:even").css("backgroundColor","#f9f9f9");
+	        //点击分页按钮背景变蓝色
+		     $(".num-page .num-click").click(function(){
+		        $(this).addClass("page-bg");
+		        $(this).siblings().removeClass("page-bg");
+		    });
+		});
+	</script>
+</head>
+<body>
+<div class="newList">
+	<table class="listd-table">
+		<tr>
+			<th><input type="checkbox" class="mar_rt"></th>
+			<th>药品编码</th>
+			<th>药品名称</th>
+			<th>剂型</th>
+			<th>规格</th>
+			<th>生产企业</th>
+		</tr>
+		<tr>
+			<td class="align-center"><input type="checkbox"></td>
+			<td>3304689220</td>
+			<td>氢甲苯酸注射液</td>
+			<td>片剂</td>
+			<td>205mg*100ml</td>
+			<td>广州番禺大石人民医院</td>
+		</tr>
+		<tr>
+			<td class="align-center"><input type="checkbox"></td>
+			<td>3659822001</td>
+			<td>氢甲苯酸注射液</td>
+			<td>注射剂</td>
+			<td>205mg:100ml*5支</td>
+			<td>广州番禺大石人民医院</td>
+		</tr>
+		<tr>
+			<td class="align-center"><input type="checkbox"></td>
+			<td>3304689220</td>
+			<td>注射液用氢甲苯酸</td>
+			<td>注射剂</td>
+			<td>205mg:100ml*5支</td>
+			<td>广州番禺大石人民医院</td>
+		</tr>
+		<tr>
+			<td class="align-center"><input type="checkbox"></td>
+			<td>3659822040</td>
+			<td>氢甲苯酸注射液</td>
+			<td>注射剂</td>
+			<td>205mg:100ml*5支</td>
+			<td>广州番禺大石人民医院</td>
+		</tr>
+	</table>
+	<div class="page-number fixed">
+		<div class="page-num">
+			<p>每页显示<select><option>10</option></select>当前页为1至5记录</p>
+		</div>
+		<div class="num-page">
+			<div class="page-record">
+				<p>跳转到<input type="text" class="num-btn" />页<input type="button" value="GO" class="num-btn go-btn" /></p>
+			</div>
+			<div class="pages">
+				<a href="#">首页</a>
+				<a href="#">上一页</a>
+				<a href="#" class="page-bg num-click">1</a>
+				<a href="#" class="num-click">2</a>
+				<a href="#" class="num-click">3</a>
+				<a href="#" class="num-click">4</a>
+				<a href="#" class="num-click">...</a>
+				<a href="#" class="num-click">65</a>
+				<a href="#">下一页</a>
+				<a href="#">末页</a>
+			</div>
+		</div>
+	</div>
+	<div class="menber_but2">
+		<input class="menber_prev" value="上一步" type="button">
+		<input class="menber_next" value="下一步" type="button">
+		<input class="menber_sub" value="提 交" type="button">
+	</div>
+</div>
+</body>
+</html>

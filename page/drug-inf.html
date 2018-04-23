@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>药品信息</title>
+	<link rel="stylesheet" type="text/css" href="../css/public.css"/><!-- 公告样式 -->
+	<link rel="stylesheet" type="text/css" href="../css/drug-inf.css"><!-- 页面样式 -->
+	<script type="text/javascript" src="../js/libs/jquery-1.8.3.min.js"></script><!-- jquery-1.8.3库 -->
+	<script type="text/javascript">
+		$(function(){
+		    //表格隔行换色
+	        $(".listd-table tr:odd").css("backgroundColor","#fbfeff");
+	        $(".listd-table tr:even").css("backgroundColor","#f9f9f9");
+	        //点击分页按钮背景变蓝色
+		     $(".num-page .num-click").click(function(){
+		        $(this).addClass("page-bg");
+		        $(this).siblings().removeClass("page-bg");
+		    });
+		});
+	</script>
+</head>
+<body>
+<div class="drug-inf">
+	<table class="table-text">
+		<tr>
+			<td class="table-title">订单编号</td>
+			<td>ZC20170518114905493</td>
+			<td class="table-title">买方企业</td>
+			<td>羊城医院</td>
+		</tr>
+		<tr>
+			<td class="table-title">卖方企业</td>
+			<td></td>
+			<td class="table-title">卖方企业</td>
+			<td>羊城药业</td>
+		</tr>
+	</table>
+	<table class="listd-table">
+		<tr>
+			<th>编号</th>
+			<th>药品名称</th>
+			<th>订单数量</th>
+			<th>响应企业</th>
+			<th>配送地址</th>
+			<th>已响应的数量</th>
+			<th>操作</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>氢甲苯酸注射液</td>
+			<td>100</td>
+			<td>羊城药业</td>
+			<td>
+				<select>
+					<option>李四 1801504</option>
+				</select>
+			</td>
+			<td>100</td>
+			<td><a href="#"><i class="details"></i>详情</a></td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>氢甲苯酸注射液</td>
+			<td>100</td>
+			<td>羊城药业</td>
+			<td>
+				<select>
+					<option>李四 1801504</option>
+				</select>
+			</td>
+			<td>100</td>
+			<td><a href="#"><i class="details"></i>详情</a></td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>氢甲苯酸注射液</td>
+			<td>100</td>
+			<td>羊城药业</td>
+			<td>
+				<select>
+					<option>李四 1801504</option>
+				</select>
+			</td>
+			<td>100</td>
+			<td><a href="#"><i class="details"></i>详情</a></td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>氢甲苯酸注射液</td>
+			<td>100</td>
+			<td>羊城药业</td>
+			<td>
+				<select>
+					<option>李四 1801504</option>
+				</select>
+			</td>
+			<td>100</td>
+			<td><a href="#"><i class="details"></i>详情</a></td>
+		</tr>
+	</table>
+	<div class="page-number fixed">
+		<div class="page-num">
+			<p>每页显示<select><option>10</option></select>当前页为1至5记录</p>
+		</div>
+		<div class="num-page">
+			<a href="#">首页</a>
+			<a href="#">上一页</a>
+			<a href="#" class="page-bg num-click">1</a>
+			<a href="#" class="num-click">2</a>
+			<a href="#" class="num-click">3</a>
+			<a href="#" class="num-click">4</a>
+			<a href="#" class="num-click">...</a>
+			<a href="#" class="num-click">65</a>
+			<a href="#">下一页</a>
+			<a href="#">末页</a>
+		</div>
+	</div>
+	<div class="menber_but2">
+		<input class="menber_prev" value="上一步" type="button">
+		<input class="menber_next" value="下一步" type="button">
+		<input class="menber_sub" value="提 交" type="button">
+	</div>
+</div>
+</body>
+</html>

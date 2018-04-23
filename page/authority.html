@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>权限管理</title>
+	<link rel="stylesheet" type="text/css" href="../css/public.css"/><!-- 公告样式 -->
+	<link rel="stylesheet" type="text/css" href="../css/default.css"/><!-- 弹出框样式 -->
+	<link rel="stylesheet" type="text/css" href="../css/authority.css"/><!-- 页面样式 -->
+	<script type="text/javascript" src="../js/libs/jquery-1.8.3.min.js"></script><!-- 1.8.3jq库 -->
+	<script type="text/javascript" src="../js/module/artDialog.source.js"></script><!-- 弹出层js -->
+	<script type="text/javascript" src="../js/module/iframeTools.source.js"></script><!-- 弹出层js -->
+	<script type="text/javascript" src="../js/menutree.js"></script><!-- 文件树插件 -->
+	<script type="text/javascript" src="../js/update.js"></script><!-- 修改弹出js -->
+	<style type="text/css">html,body{background-color: #f3f3f3;}</style>
+</head>
+<body>
+	<div class="list-content list-content-tree">
+		<div class="table-title fixed">
+			<div class="title-right">
+				<img src="../images/dh.png"/>
+				<span>用户管理&nbsp;>>&nbsp;<strong>权限管理</strong></span>
+			</div>
+		</div>
+		<div class="treemenu-content fixed">
+			<div class="f-item fixed">
+				<div class="f-title">角色名称</div>
+				<div class="f-text">
+					<select class="f-sel input-pub">
+						<option>配送方</option>
+					</select>
+				</div>
+			</div>
+			<div class="f-tree">
+				<div class="f-text menu-text">
+					<div class="tree">
+						<ul id="rootUL"></ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="treemenu-btn">
+			<input type="button" class="btn-bg btn-orz" value="一键删除"/>
+			<input type="button" class="btn-bg" value="保存"/>
+		</div>
+    </div>
+</body>
+</html>

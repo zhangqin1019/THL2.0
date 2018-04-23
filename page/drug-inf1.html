@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>药品信息</title>
+	<link rel="stylesheet" type="text/css" href="../css/public.css"/><!-- 公告样式 -->
+	<link rel="stylesheet" type="text/css" href="../css/drug-inf.css"><!-- 页面样式 -->
+	<script type="text/javascript" src="../js/libs/jquery-1.8.3.min.js"></script><!-- jquery-1.8.3库 -->
+	<script type="text/javascript">
+		$(function(){
+		    //表格隔行换色
+	        $(".listd-table tr:odd").css("backgroundColor","#fbfeff");
+	        $(".listd-table tr:even").css("backgroundColor","#f9f9f9");
+		});
+	</script>
+</head>
+<body>
+<div class="drug-inf">
+	<table class="table-text">
+		<tr>
+			<td class="table-title">订单编号</td>
+			<td>ZC20170518114905493</td>
+			<td class="table-title">药品名称</td>
+			<td>氨基酸片</td>
+		</tr>
+		<tr>
+			<td class="table-title">包装规格</td>
+			<td>250mg*100s</td>
+			<td class="table-title">买方企业</td>
+			<td>羊城医院</td>
+		</tr>
+		<tr>
+			<td class="table-title">卖方企业</td>
+			<td></td>
+			<td class="table-title">配送企业</td>
+			<td>羊城药业</td>
+		</tr>
+		<tr>
+			<td class="table-title">成交价格</td>
+			<td>￥10.000</td>
+			<td class="table-title">订单数量</td>
+			<td>100</td>
+		</tr>
+		<tr>
+			<td class="table-title">出库数量</td>
+			<td>0</td>
+			<td class="table-title">剩余响应数量</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td class="table-title">出库数量</td>
+			<td>0</td>
+			<td class="table-title">收货数量</td>
+			<td>0</td>
+		</tr>
+	</table>
+	<table class="listd-table">
+		<tr>
+			<th>内容</th>
+			<th>操作方</th>
+			<th>操作用户</th>
+			<th>时间</th>
+			<th>备注</th>
+		</tr>
+		<tr>
+			<td>全部响应</td>
+			<td>羊城药业</td>
+			<td>羊城药业</td>
+			<td>2017-05-18 13:45:22</td>
+			<td>成功响应[50]件</td>
+		</tr>
+		<tr>
+			<td>部分响应</td>
+			<td>羊城药业</td>
+			<td>羊城药业</td>
+			<td>2017-05-18 13:45:22</td>
+			<td>成功响应[50]件</td>
+		</tr>
+		<tr>
+			<td>等待响应</td>
+			<td>羊城医院</td>
+			<td>羊城医院</td>
+			<td>2017-05-18 13:45:22</td>
+			<td>订单发送</td>
+		</tr>
+		<tr>
+			<td>等待响应</td>
+			<td>羊城医院</td>
+			<td>羊城医院</td>
+			<td>2017-05-18 13:45:22</td>
+			<td>订单发送</td>
+		</tr>
+	</table>
+	<div class="menber_but2">
+		<input class="menber_prev" value="上一步" type="button">
+		<input class="menber_next" value="下一步" type="button">
+		<input class="menber_sub" value="提 交" type="button">
+	</div>
+</div>
+</body>
+</html>

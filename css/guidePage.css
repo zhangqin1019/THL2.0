@@ -1,0 +1,67 @@
+.member-type{width: 1022px;min-height: 410px;margin: 60px auto 40px auto;background-color: #fff;  -moz-border-radius: 4px; -webkit-border-radius: 4px;border-radius:4px;padding: 0 0 1px 0;}
+.member-type h3{font-size: 28px;color: #444;padding:24px 0px;text-align: center;border-bottom: 1px solid #ddd;font-weight: normal;}
+.member-type p{font-size: 20px;color: #444;padding: 44px 0px 28px 65px;}
+.mem-ct{width: 1022px;padding:60px 0px 60px 0px;}
+.mem-ct a{display: inline-block;width: 246px;height: 188px;position: relative;}
+.mem-ct a:hover{filter:alpha(opacity=90); -moz-opacity:0.9; -khtml-opacity:0.9; opacity: 0.9;}
+.mem-ct a span{position: absolute;left: 20px;bottom: 13px;color: #fff;font-size: 18px;}
+.mem-ct .mem-med{background: url(../images/mem-trad.png) no-repeat;margin-left: 65px;}
+.mem-ct .mem-man{background: url(../images/mem-turn.png) no-repeat;margin:0px 66px;}
+.mem-ct .mem-dis{background: url(../images/mem-out.png) no-repeat;}
+.mem-at{text-align: center;}
+.mem-at a{font-size: 16px;color: #9b9b9b;text-decoration: underline;}
+.mem-at a:hover{color: #2ba8d6;}
+/*交易系统引导页*/
+.vise-type .mem-ct .mem-med{background: url(../images/mun-med.jpg) no-repeat;margin:0px 0px 0px 65px;}
+.vise-type .mem-ct .mem-man{background: url(../images/mun-manu.png) no-repeat;margin:0px 66px 0px 66px;}
+.vise-type .mem-ct .mem-dis{background: url(../images/mun-dis.png) no-repeat;}
+
+/*监管系统引导页*/
+.deal-type .mem-ct a{display: inline-block;width: 208px;height: 159px;position: relative;}
+.deal-type .mem-ct a span{position: absolute;left: 12px;bottom: 10px;color: #fff;font-size: 16px;}
+.deal-type .mem-ct .mem-hos{background: url(../images/hos-small.jpg) no-repeat;margin:0px 30px 0px 45px;}
+.deal-type .mem-ct .mem-med{background: url(../images/med-small.jpg) no-repeat;margin:0px 30px 0px 0px;}
+.deal-type .mem-ct .mem-man{background: url(../images/manu-small.jpg) no-repeat;margin:0px 30px 0px 0px;}
+.deal-type .mem-ct .mem-dis{background: url(../images/dis-small.jpg) no-repeat;}
+
+/*结算系统引导页*/
+.count-type .mem-ct .mem-med{background: url(../images/mem-tax.png) no-repeat;margin:0px 0px 0px 65px;}
+.count-type .mem-ct .mem-man{background: url(../images/mem-heal.png) no-repeat;margin:0px 66px 0px 66px;}
+.count-type .mem-ct .mem-dis{background: url(../images/mem-drug.png) no-repeat;}
+
+/*类型设置页*/
+.member-type2 .member-type{width: 1002px;margin: 60px auto 180px auto;background-color: #fff;min-height: 550px;padding: 0px 10px;}
+.member-type2 .mem-ct .mem-med{background: url(../images/mun-med.jpg) no-repeat;margin:0px 0px 0px 65px;}
+.member-type2 .mem-ct .mem-man{background: url(../images/mun-manu.png) no-repeat;margin:0px 66px 0px 65px;}	
+.member-type2 .mem-ct .mem-dis{background: url(../images/mun-dis.png) no-repeat;}
+.member-type2 .mem-at{text-align:left;}		
+.member-type2 .mem-at{width: 875px;height: 40px;line-height: 40px;font-size: 14px;color: #e35a53;border:1px solid #eddada;background-color: #fff9f9;margin:60px 0px 40px 65px;border-radius: 5px;}
+.member-type2 .mem-at a{font-size: 16px;color: #9b9b9b;text-decoration: underline;}		
+.member-type2 .mem-at i{display: inline-block;width: 16px;height: 16px;background: url(../images/mem-alert.png) no-repeat;vertical-align: middle;margin-left: 20px;}
+.member-type2 .mem-ct{padding: 0}
+
+/*类型1设置页*/
+.member-type3 .member-type{width: 1002px;margin: 60px auto 180px auto;background-color: #fff;min-height: 550px;padding: 0px 10px;}
+.member-type3 .mem-ct{width: 1022px;padding:50px 0px 60px 0px;}
+.member-type3 .mem-ct a{display: inline-block;width: 208px;height: 159px;position: relative;}
+.member-type3 .mem-ct a span{position: absolute;left: 15px;bottom: 10px;color: #fff;font-size: 16px;}
+.member-type3 .mem-ct .mem-hos{background: url(../images/hos-small.jpg) no-repeat;margin: 0px 30px 0px 40px;}
+.member-type3 .mem-ct .mem-med{background: url(../images/med-small.jpg) no-repeat;margin:0px 30px 0px 0px;}
+.member-type3 .mem-ct .mem-man{background: url(../images/manu-small.jpg) no-repeat;margin:0px 30px 0px 0px;}	
+.member-type3 .mem-ct .mem-dis{background: url(../images/dis-small.jpg) no-repeat;}
+.member-type3 .mem-at{text-align:left;margin:64px 0px 30px 70px;}		
+.member-type3 .mem-at{width: 875px;height: 40px;line-height: 40px;font-size: 14px;color: #e35a53;border:1px solid #eddada;background-color: #fff9f9;border-radius: 5px;}
+.member-type3 .mem-at a{font-size: 16px;color: #9b9b9b;text-decoration: underline;}		
+.member-type3 .mem-at i{display: inline-block;width: 16px;height: 16px;background: url(../images/mem-alert.png) no-repeat;vertical-align: middle;margin-left: 20px;}
+.member-type3 .mem-ct{padding: 0}
+
+/*类型2设置页*/
+.member-type4 .member-type{width: 1002px;margin: 60px auto 180px auto;background-color: #fff;min-height: 550px;padding: 0px 10px;}
+.member-type4 .mem-ct .mem-med{background: url(../images/mem-tax.png) no-repeat;margin:0px 0px 0px 65px;}
+.member-type4 .mem-ct .mem-man{background: url(../images/mem-heal.png) no-repeat;margin:0px 66px 0px 65px;}	
+.member-type4 .mem-ct .mem-dis{background: url(../images/mem-drug.png) no-repeat;}
+.member-type4 .mem-at{text-align:left;}		
+.member-type4 .mem-at{width: 875px;height: 40px;line-height: 40px;font-size: 14px;color: #e35a53;border:1px solid #eddada;background-color: #fff9f9;margin:60px 0px 40px 65px;border-radius: 5px;}
+.member-type4 .mem-at a{font-size: 16px;color: #9b9b9b;text-decoration: underline;}		
+.member-type4 .mem-at i{display: inline-block;width: 16px;height: 16px;background: url(../images/mem-alert.png) no-repeat;vertical-align: middle;margin-left: 20px;}
+.member-type4 .mem-ct{padding: 0}

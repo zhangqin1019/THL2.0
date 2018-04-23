@@ -1,0 +1,47 @@
+/*找回密码样式*/
+.member-type{width: 608px;min-height: 445px;margin: 60px auto 40px auto;background-color: #fff;padding: 0px 10px;  -moz-border-radius: 4px; -webkit-border-radius: 4px;border-radius:4px;}
+.member-type h3{font-size: 24px;color: #444;padding:15px 0px;text-align: center;border-bottom: 1px solid #ddd;font-weight: normal;}
+.member-type p{font-size: 20px;color: #444;padding: 22px 0px 40px 0px;}
+.mem-ct:after {clear: both;content: "";display: table;}
+.mem-ct{width: 608px;}
+.mem-ct a{display: inline-block;width: 200px;height: 166px;position: relative;}
+.mem-ct a:hover{filter:alpha(opacity=90); -moz-opacity:0.9; -khtml-opacity:0.9; opacity: 0.9;}
+.mem-ct a span{position: absolute;left: 20px;bottom: 15px;color: #fff;font-size: 18px;}
+.mem-ct .mem-tel{background: url(../images/mem-tel.png) no-repeat;margin:0px 75px 0px 65px;}
+.mem-ct .mem-email{background: url(../images/mem-email.png) no-repeat;}
+.mem-at{width: 476px;height: 40px;line-height: 40px;font-size: 14px;color: #e35a53;border:1px solid #eddada;background-color: #fff9f9;margin:50px 0px 0px 65px;border-radius: 5px;}
+.mem-at i{display: inline-block;width: 16px;height: 16px;background: url(../images/mem-alert.png) no-repeat;vertical-align: middle;margin-left: 20px;}
+/*手机验证和email验证及密码重设样式*/
+.tel-pass{width:408px;min-height: 266px;padding: 0px 15px;margin-bottom: 40px;}
+.tel-pass .mem-ct{width: 408px;}
+.fm-item{float: left;line-height: 40px;margin-top: 20px;width: 100%;}
+.fm-title{float: left;width: 80px;height:40px;line-height:40px;color: #666666;font-size: 14px;text-align: right;margin-right:20px;}
+.fm-text{float: left;position: relative;}
+.fm-input{width: 286px;height: 38px;line-height: 38px;padding: 0px 6px;font-size: 14px;}
+.test-item input{float: left;}
+.fm-test{width: 168px;height: 38px;line-height: 38px;padding: 0px 6px;font-size: 14px;}
+.test-type{width:104px;height: 40px;line-height: 40px;margin-left: 16px;position: absolute;right: -119px;}
+.test-tel{border-radius: 5px;color: #9b9a9a;font-size: 16px;background-color: #dddddd;text-align: center;cursor: pointer;}
+.fm-sumbit{text-align: center;}
+.fm-sumbit input{width: 104px;height: 38px;line-height: 38px;color: #fff;background-color: #019dd6;font-size: 16px;border-radius: 5px;margin: 26px 0px 30px 0px;}
+.fm-sumbit input:hover{filter:alpha(opacity=90); -moz-opacity:0.9; -khtml-opacity:0.9; opacity: 0.9;}
+.pass-level{height: 28px;line-height: 28px;}
+.pass-level span{display: block;float: left;font-size: 12px;color: #9b9b9b;margin-right:5px;}
+.pass-bar{float: left;position: relative;}
+.pass{background: url(../images/setPass.png) no-repeat 0 -14px;height: 14px;overflow: hidden;width: 236px;position: absolute;top: 8px;left: 0px;}
+.pass-on{background: url(../images/setPass.png) no-repeat 0 0;width:0px;height: 14px;position: absolute;top: 8px;left: 0px;transition: width .4s ease-in;-moz-transition: width .4s ease-in;-webkit-transition: width .4s ease-in;-o-transition: width .4s ease-in;}
+.pw-weak .pw-defule{width: 0px;}
+.pw-weak .pass-on{width: 78px;}
+.pw-medium .pass-on{width: 157px;}
+.pw-strong .pass-on{width: 236px;}
+/*密码重设成功样式*/
+.pass-true{width:474px;min-height:250px;margin-bottom: 40px;border:1px solid #ddd;border-radius: 4px;}
+.pass-true .mem-ct{padding-left: 36px;}
+.true-tip{margin:60px 0px 0px 0px;font-size: 24px;color: #019dd6;}
+.true-tip img{vertical-align: middle;margin-right: 8px;}
+.pass-true .mem-ct p{font-size: 16px;color: #9b9b9b;margin:0px;padding:0px 0px 15px 38px;}
+.close-btn input{width: 127px;height: 38px;line-height: 38px;color: #fff;background-color: #019dd6;font-size: 16px;border-radius: 5px;margin: 26px 0px 30px 160px;}
+.close-btn input:hover{filter:alpha(opacity=90); -moz-opacity:0.9; -khtml-opacity:0.9; opacity: 0.9;}
+
+.menber-true{width:693px;}
+.menber-true .close-btn input{margin: 26px 0 30px 247px;}

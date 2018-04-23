@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>修改会员资料</title>
+	<link rel="stylesheet" type="text/css" href="../css/public.css"/><!-- 公告样式 -->
+	<link rel="stylesheet" type="text/css" href="../css/modifyData.css"/><!-- 修改会员资料样式 -->
+	<link rel="stylesheet" type="text/css" href="../css/menberPage.css"/><!-- 会员资料样式 -->
+	<link rel="stylesheet" type="text/css" href="../css/default.css"  /><!-- 弹出层样式 -->
+	<script type="text/javascript" src="../js/libs/jquery-1.8.3.min.js"></script><!-- 1.8.3jq库 -->
+	<script type="text/javascript" src="../js/public.js"></script><!-- 右边框架公告js 右边框架必须加 -->
+	<script type="text/javascript" src="../js/modifyData.js"></script><!-- 修改会员js-->
+	<style type="text/css">html,body{background-color: #f3f3f3;}</style>
+	<script src="../js/module/artDialog.source.js"></script><!-- 弹出层js -->
+	<script src="../js/module/iframeTools.source.js"></script><!-- 弹出层js -->
+	<script type="text/javascript">
+	    function settelPass() {
+	        art.dialog.open('settelPass.html', {
+	        	title: '修改绑定手机号码', 
+	        	lock: true,
+	        	width:400,
+				ok: function () {},
+		    	cancelVal: '关闭',
+		    	cancel: true
+	    	});
+	    }
+	    function setemail() {
+	        art.dialog.open('setEmail.html', {
+	        	title: '修改绑定Email地址', 
+	        	lock: true,
+	        	width:400,
+				ok: function () {},
+		    	cancelVal: '关闭',
+		    	cancel: true
+	    	});
+	    }
+	</script>
+</head>
+<body>
+<div class="list-content" style="min-width:910px;">
+	<div class="table-title fixed">
+		<div class="title-right">
+			<img src="../images/dh.png"/>
+			<span>会员资料</span>
+		</div>
+	</div>
+	<div class="modify">
+		<div class="modify-tp fixed">
+			<div class="modify-lt">
+				<img src="../images/login_pic.png"/>
+			</div>
+			<div class="modify-rt">
+				<h3>你的会员类型为:<span>买方</span></h3>
+				<p>注册时间:2017-3-12 12:32</p>
+				<div class="progress fixed">
+					<span>资料完整度</span>
+					<div class="pro-bg">
+						<div class="pro-list"></div>
+					</div>
+					<span class="modify-much"><b>49</b>%</span>
+				</div>
+			</div>
+		</div>
+		<div class="modify-bt fixed">
+			<div class="modify-tel fixed">
+				<div class="tel-lt">
+					<img src="../images/modify-tel.png"/>
+				</div>
+				<div class="tel-rt">
+					<p>手机已验证</p>
+					<p>137****7189<a href="JavaScript:;" onclick="settelPass()">修改手机号</a></p>
+					<span>您可以享受手机相关的登录、安全及提醒服务</span>
+				</div>
+			</div>
+			<div class="modify-tel modify-eamil fixed">
+				<div class="tel-lt">
+					<img src="../images/modify-email.png"/>
+				</div>
+				<div class="tel-rt">
+					<p>Email已绑定</p>
+					<p>540****@qq.com<a href="JavaScript:;" onclick="setemail()">修改邮箱</a></p>
+					<span>绑定后，您可以使用Email保证您的账号安全</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modify-list">
+		<ul class="menber_con">
+			<li>
+				<span>会员(单位)基本信息</span>
+				<span class="modify-inf">完善资料，让大家更了解你</span>
+				<a class="modify-edit" href="JavaScript:;"><img src="../images/alt-click.png"/>编辑</a>
+				<a class="modify-up" href="JavaScript:;"><img src="../images/alt-click.png"/>收起</a>
+				<div class="modify_hide">
+					<div class="menber_term">
+						<div class="menber_li"><span>机构名称机构名称</span><input class="input-pub" type="text"/><b>*</b></div>
+						<div class="menber_li"><span>曾用名</span><input class="input-pub" type="text"/><b>*</b></div>
+						<div class="menber_li"><span>机构代码</span><input class="input-pub" type="text"/></div>
+						<div class="menber_li"><span>医采编码</span><input class="input-pub" type="text"/><b>*</b></div>
+						<div class="menber_li"><span>注册资本</span><input class="input-pub" type="text"/><b>*</b></div>
+						<div class="menber_li"><span>机构电话</span><input class="input-pub" type="text"/></div>
+						<div class="menber_li"><span>单位级别</span>
+							<select class="input-pub">
+								<option></option>
+								<option>单位级别</option>
+							</select>
+						</div>
+						<div class="menber_li"><span>年门诊量</span><input class="input-pub" type="text"/></div>
+						<div class="menber_li"><span>病床数量</span><input class="input-pub" type="text"/></div>
+						<div class="menber_li"><span>员工总数</span><input class="input-pub" type="text"/></div>
+					</div>
+					<div class="menber_but">
+						<input class="menber_sub" value="保 存" type="button">
+					</div>
+				</div>
+			</li>
+			<li>
+				<span>法定代表人信息</span>
+				<span class="modify-inf">完善资料，让大家更了解你</span>
+				<a class="modify-edit" href="JavaScript:;"><img src="../images/alt-click.png"/>编辑</a>
+				<a class="modify-up" href="JavaScript:;"><img src="../images/alt-click.png"/>收起</a>
+				<div class="modify_hide">
+					<div class="menber_term">
+						<div class="menber_li"><span>姓名</span><input class="input-pub" type="text"/><b>*</b></div>
+						<div class="menber_li"><span>证件扫描件</span>
+							<div class="menber_up">
+								<a class="menber_upload" href="JavaScript:;">上传</a>
+								<a class="menber_see" href="JavaScript:;" onclick="upload_see()">预览</a>
+								<input class="menber_file" type="file"/>
+							</div>
+						</div>
+						<div class="menber_li"><span>证件类型</span>
+							<select class="input-pub">
+								<option>身份证</option>
+								<option>身份证</option>
+							</select>
+							<b>*</b>
+						</div>
+						<div class="menber_li"><span>证件号码</span><input class="input-pub" type="text"/><b>*</b></div>
+						<div class="menber_li"><span>手机号码</span><input class="input-pub" type="text"/></div>
+						<div class="menber_li"><span>固定电话</span><input class="input-pub" type="text"/></div>
+					</div>
+					<div class="menber_but">
+						<input class="menber_sub" value="保 存" type="button">
+					</div>
+				</div>
+			</li>
+			<li>
+				<span>联系人信息</span>
+				<span class="modify-inf">完善资料，让大家更了解你</span>
+				<a class="modify-edit" href="JavaScript:;"><img src="../images/alt-click.png"/>编辑</a>
+				<a class="modify-up" href="JavaScript:;"><img src="../images/alt-click.png"/>收起</a>
+				<div class="modify_hide">
+					<div class="menber_term">
+						<div class="menber_li"><span>姓名</span><input class="input-pub" type="text"/><b>*</b></div>
+						<div class="menber_li"><span>Email</span><input class="input-pub" type="text"/><b>*</b></div>
+						<div class="menber_li"><span>证件类型</span>
+							<select class="input-pub">
+								<option>身份证</option>
+								<option>身份证</option>
+							</select>
+						</div>
+						<div class="menber_li"><span>证件号码</span><input class="input-pub" type="text"/><b>*</b></div>
+						<div class="menber_li"><span>手机号码</span><input class="input-pub" type="text"/><b>*</b></div>
+						<div class="menber_li"><span>固定电话</span><input class="input-pub" type="text"/></div>
+						<div class="menber_li"><span>工作职位</span><input class="input-pub" type="text"/></div>
+						<div class="menber_li"><span>传真号码</span><input class="input-pub" type="text"/></div>
+						<div class="menber_li"><span>邮政编码</span><input class="input-pub" type="text"/></div>
+						<div class="menber_li"><span>常用地址</span><input class="input-pub" type="text"/></div>
+					</div>
+					<div class="menber_but">
+						<input class="menber_sub" value="保 存" type="button">
+					</div>
+				</div>
+			</li>
+			<li>
+				<span>被授权人信息</span>
+				<span class="modify-inf">完善资料，让大家更了解你</span>
+				<a class="modify-edit" href="JavaScript:;"><img src="../images/alt-click.png"/>编辑</a>
+				<a class="modify-up" href="JavaScript:;"><img src="../images/alt-click.png"/>收起</a>
+				<div class="modify_hide">
+					<div class="menber_term">
+						<div class="menber_li"><span>姓名</span><input class="input-pub" type="text"/><b>*</b></div>
+						<div class="menber_li"><span>Email</span><input class="input-pub" type="text"/><b>*</b></div>
+						<div class="menber_li"><span>证件类型</span>
+							<select class="input-pub">
+								<option>身份证</option>
+								<option>身份证</option>
+							</select>
+						</div>
+						<div class="menber_li"><span>证件号码</span><input class="input-pub" type="text"/><b>*</b></div>
+						<div class="menber_li"><span>手机号码</span><input class="input-pub" type="text"/><b>*</b></div>
+						<div class="menber_li"><span>固定电话</span><input class="input-pub" type="text"/></div>
+						<div class="menber_li"><span>法定代表人授权书</span>
+							<div class="menber_up">
+								<a class="menber_upload" href="JavaScript:;">上传</a>
+								<a class="menber_see" href="JavaScript:;" onclick="upload_see()">预览</a>
+								<input class="menber_file" type="file"/>
+							</div>
+						</div>
+						<div class="menber_li"><span>被授权人授权书</span>
+							<div class="menber_up">
+								<a class="menber_upload" href="JavaScript:;">上传</a>
+								<a class="menber_see" href="JavaScript:;" onclick="upload_see()">预览</a>
+								<input class="menber_file" type="file"/>
+							</div>
+						</div>
+					</div>
+					<div class="menber_but">
+						<input class="menber_sub" value="保 存" type="button">
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+</body>
+</html>

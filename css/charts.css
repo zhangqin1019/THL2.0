@@ -1,0 +1,12 @@
+.information{height: 40px;background-color: #e7eaec;}
+.inf-content{min-width: 990px;margin: 0px 0px 0px 10px;padding:0px;font-size: 14px;color: #444;background-color: #e7eaec;overflow: hidden;}
+.inf-run{float: left;}
+.inf-img{float: left;padding-right: 10px;}
+.inf-img img{margin-top:13px;}
+.inf-left{float: left;min-width: 700px;}
+.inf-left ul li{height: 40px;line-height: 40px;}
+.inf-left a{line-height: 40px;color: #e35a53;font-size: 14px;font-family: "宋体"\9;font-size: 12px\9;}
+.inf-left a:hover{text-decoration: underline;}
+.inf-right{float: right;height: 40px;}
+.inf-right a{display:inline-block;line-height: 40px;background-color:#cccccc;color: #fff;padding: 0px 10px;}
+.inf-right a:hover{background-color:#2ba8d6;}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>会员类型</title>
+	<link rel="stylesheet" type="text/css" href="css/public.css"/><!-- 公告样式 -->
+	<link rel="stylesheet" type="text/css" href="css/menberPage.css"/><!-- 进入页样式 -->
+	<script type="text/javascript" src="js/libs/jquery-1.8.3.min.js"></script><!-- 1.8.3jq库 -->
+	<script type="text/javascript" src="js/menberPage.js"></script><!-- 会员信息js -->
+	<style type="text/css">html,body{background-color: #f3f3f3;}</style>
+</head>
+<body>
+<div class="member-top">
+	<div class="member-title fixed">
+		<div class="mem-lt">
+			<a href="#"><img src="images/mun-title.png"/></a>
+		</div>
+		<div class="mem-rt">
+			<a href="#" target="_blank">帮助</a>
+			<span>|</span>
+			<a href="#" target="_blank">在线客服</a>
+		</div>
+	</div>
+</div>
+<h1 class="menber_h1">完善会员资料</h1>
+<div class="menber_info">
+	<p>你选择的会员类型为：<span>买方</span></p>
+	<ul class="menber_radio">
+		<li><label><input type="radio" name="place_sel"/><span>县级及县级以上医疗机构</span></label></li>
+		<li><label><input type="radio" name="place_sel"/><span>部队医疗机构</span></label></li>
+		<li><label><input type="radio" name="place_sel"/><span>民营医疗机构</span></label></li>
+		<li><label><input type="radio" name="place_sel"/><span>基层医疗机构</span></label></li>
+		<li><label><input type="radio" name="place_sel"/><span>疾控中心</span></label></li>
+	</ul>
+	<div class="menber_box">
+		<ul class="menber_nav">
+			<li><a href="JavaScript:;" class="menber_box_cur">1.会员（单位）基本信息</a></li>
+			<li><a href="JavaScript:;">2.法定代表人信息</a></li>
+			<li><a href="JavaScript:;">3.联系人信息</a></li>
+			<li><a href="JavaScript:;">4.被授权人信息</a></li>
+		</ul>
+		<div class="menber_con">
+			<div class="menber_term">
+				<div class="menber_li"><span>机构名称机构名称</span><input class="input-pub" type="text"/><b>*</b></div>
+				<div class="menber_li"><span>曾用名</span><input class="input-pub" type="text"/><b>*</b></div>
+				<div class="menber_li"><span>机构代码</span><input class="input-pub" type="text"/></div>
+				<div class="menber_li"><span>医采编码</span><input class="input-pub" type="text"/><b>*</b></div>
+				<div class="menber_li"><span>注册资本</span><input class="input-pub" type="text"/><b>*</b></div>
+				<div class="menber_li"><span>机构电话</span><input class="input-pub" type="text"/></div>
+				<div class="menber_li"><span>单位级别</span>
+					<select class="input-pub">
+						<option></option>
+						<option>单位级别</option>
+					</select>
+				</div>
+				<div class="menber_li"><span>年门诊量</span><input class="input-pub" type="text"/></div>
+				<div class="menber_li"><span>病床数量</span><input class="input-pub" type="text"/></div>
+				<div class="menber_li"><span>员工总数</span><input class="input-pub" type="text"/></div>
+			</div>
+			<div class="menber_term" style="display:none;">
+				<div class="menber_li"><span>姓名</span><input class="input-pub" type="text"/><b>*</b></div>
+				<div class="menber_li"><span>证件扫描件</span>
+					<div class="menber_up">
+						<a class="menber_upload" href="JavaScript:;">上传</a>
+						<a class="menber_see" href="JavaScript:;" onclick="upload_see()">预览</a>
+						<input class="menber_file" type="file"/>
+					</div>
+				</div>
+				<div class="menber_li"><span>证件类型</span>
+					<select class="input-pub">
+						<option>身份证</option>
+						<option>身份证</option>
+					</select>
+					<b>*</b>
+				</div>
+				<div class="menber_li"><span>证件号码</span><input class="input-pub" type="text"/><b>*</b></div>
+				<div class="menber_li"><span>手机号码</span><input class="input-pub" type="text"/></div>
+				<div class="menber_li"><span>固定电话</span><input class="input-pub" type="text"/></div>
+			</div>
+			<div class="menber_term" style="display:none;">
+				<div class="menber_li"><span>姓名</span><input class="input-pub" type="text"/><b>*</b></div>
+				<div class="menber_li"><span>Email</span><input class="input-pub" type="text"/><b>*</b></div>
+				<div class="menber_li"><span>证件类型</span>
+					<select class="input-pub">
+						<option>身份证</option>
+						<option>身份证</option>
+					</select>
+				</div>
+				<div class="menber_li"><span>证件号码</span><input class="input-pub" type="text"/><b>*</b></div>
+				<div class="menber_li"><span>手机号码</span><input class="input-pub" type="text"/><b>*</b></div>
+				<div class="menber_li"><span>固定电话</span><input class="input-pub" type="text"/></div>
+				<div class="menber_li"><span>工作职位</span><input class="input-pub" type="text"/></div>
+				<div class="menber_li"><span>传真号码</span><input class="input-pub" type="text"/></div>
+				<div class="menber_li"><span>邮政编码</span><input class="input-pub" type="text"/></div>
+				<div class="menber_li"><span>常用地址</span><input class="input-pub" type="text"/></div>
+			</div>
+			<div class="menber_term" style="display:none;">
+				<div class="menber_li"><span>姓名</span><input class="input-pub" type="text"/><b>*</b></div>
+				<div class="menber_li"><span>Email</span><input class="input-pub" type="text"/><b>*</b></div>
+				<div class="menber_li"><span>证件类型</span>
+					<select class="input-pub">
+						<option>身份证</option>
+						<option>身份证</option>
+					</select>
+				</div>
+				<div class="menber_li"><span>证件号码</span><input class="input-pub" type="text"/><b>*</b></div>
+				<div class="menber_li"><span>手机号码</span><input class="input-pub" type="text"/><b>*</b></div>
+				<div class="menber_li"><span>固定电话</span><input class="input-pub" type="text"/></div>
+				<div class="menber_li"><span>法定代表人授权书</span>
+					<div class="menber_up">
+						<a class="menber_upload" href="JavaScript:;">上传</a>
+						<a class="menber_see" href="JavaScript:;" onclick="upload_see()">预览</a>
+						<input class="menber_file" type="file"/>
+					</div>
+				</div>
+				<div class="menber_li"><span>被授权人授权书</span>
+					<div class="menber_up">
+						<a class="menber_upload" href="JavaScript:;">上传</a>
+						<a class="menber_see" href="JavaScript:;" onclick="upload_see()">预览</a>
+						<input class="menber_file" type="file"/>
+					</div>
+				</div>
+			</div>
+		</div>
+		<p class="menber_must">*为必填项</p>
+		<div class="menber_but">
+				<input class="menber_prev" value="上一步" type="button" name="0">
+				<input class="menber_next" value="下一步" type="button" name="0">
+				<input class="menber_sub" value="提 交" type="button">
+		</div>
+	</div>
+</div>
+<div class="member-foot">
+	<p>Copyright © 2014-2016 By<a href="#">广东省药品交易中心</a>All Rights Reserved.</p>
+</div>
+</body>
+</html>

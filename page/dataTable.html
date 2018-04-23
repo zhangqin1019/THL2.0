@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>数据表格</title>
+	<link rel="stylesheet" type="text/css" href="../css/public.css"/><!-- 公告样式 -->
+	<link rel="stylesheet" type="text/css" href="../css/dataTable.css"/><!-- 查询条件表格样式 -->
+	<link rel="stylesheet" type="text/css" href="../css/daterangepicker.css"/><!-- 时间插件样式 -->
+	<link rel="stylesheet" type="text/css" href="../css/default.css"  /><!-- 弹出层样式 -->
+	<script type="text/javascript" src="../js/libs/jquery-1.8.3.min.js"></script><!-- 1.8.3jq库 -->
+	<script type="text/javascript" src="../js/module/moment.min.js"></script><!-- 时间插件js -->
+	<script type="text/javascript" src="../js/module/daterangepicker.min.js"></script><!-- 时间插件js -->
+	<script type="text/javascript" src="../js/dataTable.js"></script><!-- 查询条件表格js -->
+	<script type="text/javascript" src="../js/module/jquery.cookie.js"></script><!-- cookie -->
+	<script type="text/javascript" src="../js/public.js"></script><!-- 右边框架公告js 右边框架必须加 -->
+	<script src="../js/module/artDialog.source.js"></script><!-- 弹出层js -->
+	<script src="../js/module/iframeTools.source.js"></script><!-- 弹出层js -->
+	<script type="text/javascript">
+	//时间选择(有时间的界面才调用)
+	$(function(){
+      	$("#sel-date").dateRangePicker({
+            autoClose: true,
+            singleDate : true,
+            showShortcuts: false
+      	});
+      	$('.two-inputs').dateRangePicker({
+          	getValue: function()
+          	{
+              	if ($('#tim-sta').val() && $('#tim-end').val() )
+                  	return $('#tim-sta').val() + ' to ' + $('#tim-end').val();
+              	else
+                  	return '';
+          	},
+          	setValue: function(s,s1,s2)
+          	{
+              	$('#tim-sta').val(s1);
+              	$('#tim-end').val(s2);
+          	}
+      	});		
+	})
+	</script>
+	<style type="text/css">html,body{background-color: #f3f3f3;}</style>
+</head>
+<body>
+	<div class="list-content">
+		<div class="table-title fixed">
+			<div class="title-right">
+				<img src="../images/dh.png"/>
+				<span>投诉管理&nbsp;>>历史申诉管理&nbsp;>>&nbsp;<strong>投诉列表</strong></span>
+			</div>
+		</div>
+		<div class="search-content">
+			<div class="search-title fixed">
+				<div class="search-left">
+					搜索
+				</div>
+				<div class="search-right">
+					<a href="JavaScript:;" class="asq">显示全部</a>
+					<span href="JavaScript:;" class="zdy">自定义搜索选项
+						<div class="else_hide">
+							<ul>
+							</ul>
+						</div>
+					</span>
+				</div>
+			</div>
+			<div class="search-list fixed">
+				<div class="fm-item fixed">
+					<div class="fm-title">合同编号</div>
+					<div class="fm-text">
+						<select class="input-pub">
+							<option>请选择</option>
+						</select>
+					</div>
+				</div>
+				<div class="fm-item fixed">
+					<div class="fm-title">合同状态</div>
+					<div class="fm-text">
+						<input type="text" class="fm-input input-pub"/>
+					</div>
+				</div>
+				<div class="fm-item fixed">
+					<div class="fm-title">产品名称</div>
+					<div class="fm-text">
+						<input type="text" class="fm-input input-pub"/>
+					</div>
+				</div>
+				<div class="fm-item fixed">
+					<div class="fm-title">产品名称</div>
+					<div class="fm-text">
+						<input type="text" class="fm-input input-pub"/>
+					</div>
+				</div>
+				<div class="fm-item fixed">
+					<div class="fm-title">合同编号</div>
+					<div class="fm-text">
+						<select class="input-pub">
+							<option>请选择</option>
+						</select>
+					</div>
+				</div>
+				<div class="fm-item fixed">
+					<div class="fm-title">合同编号</div>
+					<div class="fm-text">
+						<select class="input-pub">
+							<option>请选择</option>
+						</select>
+					</div>
+				</div>
+				<div class="fm-item fixed">
+					<div class="fm-title">合同编号</div>
+					<div class="fm-text">
+						<select class="input-pub">
+							<option>请选择</option>
+						</select>
+					</div>
+				</div>
+				<div class="fm-item fixed">
+					<div class="fm-title">合同状态</div>
+					<div class="fm-text">
+						<input type="text" class="fm-input input-pub"/>
+					</div>
+				</div>
+				<div class="fm-item fixed">
+					<div class="fm-title">单日期</div>
+					<div class="exp-txt">
+						<input onkeypress="javascript:return false" type="text" name="" id="sel-date"/>
+					</div>
+				</div>
+				<div class="fm-item fixed">
+					<div class="fm-title">日期选择</div>
+					<div class="exp-txt two-inputs">
+						<input type="text" name="" id="tim-sta"/>
+        				<input type="text" name="" id="tim-end"/>
+					</div>
+				</div>
+				<!-- <div class="fm-item fixed">
+					<div class="fm-title">附件信息</div>
+					<div class="fm-text">
+						<a class="menber_upload" href="JavaScript:;">上传</a>
+						<a class="menber_see" href="JavaScript:;">预览</a>
+						<input type="file" class="menber_file"/>
+					</div>
+				</div> -->
+				<div class="search-btn2">
+					<input type="button" value="搜索"/>
+				</div>
+			</div>
+			<div class="search-btn">
+				<input type="button" value="搜索"/>
+			</div>
+		</div>
+		<div class="power-btn fixed">
+			<div class="btn-list">
+				<a href="#"><img src="../images/add-icon.png"/>新增</a>
+				<a href="#"><img src="../images/del-icon.png"/>删除</a>
+				<a href="#"><img src="../images/cancel-icon.png"/>撤销</a>
+				<a href="#"><img src="../images/default-icon.png"/>默认</a>
+				<a href="#"><img src="../images/refuse-icon.png"/>拒绝</a>
+				<a href="#"><img src="../images/send-icon.png"/>发送</a>
+				<a href="#"><img src="../images/true-icon.png"/>确定</a>
+				<a href="#"><img src="../images/export-icon.png"/>导出</a>
+				<a href="#"><img src="../images/import-icon.png"/>导入</a>
+				<a href="#"><img src="../images/onetract-icon.png"/>单个盖章</a>
+				<a href="#"><img src="../images/moretract-icon.png"/>批量盖章</a>
+			</div>
+			<div class="search-btn3 fixed">
+				<input type="text" placeholder="编码/合同单号"/>
+				<a href="#"><img src="../images/search.png"/></a>
+			</div>
+			<div class="top_search fixed">高级搜索</div>
+		</div>
+		<div  class="layout-all">
+			<div class="layout-content">
+				<div class="layout-table">
+					<table class="listd-table">
+						<tr>
+							<th><input type="checkbox" class="mar_rt" /></th>
+							<th>编码<span class="order"><i class="ascend"></i><i class="descend"></i></span></th>
+							<th>名称<span class="order"><i class="ascend"></i><i class="descend"></i></span></th>
+							<th>权限<span class="order"><i class="ascend"></i><i class="descend"></i></span></th>
+							<th>合同单号<span class="order"><i class="ascend"></i><i class="descend"></i></span></th>
+							<th>分值分值分值<span class="order"><i class="ascend"></i><i class="descend"></i></span></th>
+							<th>有效<span class="order"><i class="ascend"></i><i class="descend"></i></span></th>
+							<th>权限<span class="order"><i class="ascend"></i><i class="descend"></i></span></th>
+							<th>分值<span class="order"><i class="ascend"></i><i class="descend"></i></span></th>
+							<th>操作<span class="order"><i class="ascend"></i><i class="descend"></i></span></th>
+						</tr>
+						<tr>
+							<td class="align-center"><input type="checkbox" /></td>
+							<td class="align-center">1</td>
+							<td><a href="#" class="a-hover">病人主索引接口</a></td>
+							<td>病人主索引接口</td>
+							<td><a href="#" class="a-hover">SJ199933224</a></td>
+							<td class="align-right money-red">1889.33</td>
+							<td></td>
+							<td>病人主索引接口</td>
+							<td class="align-right money-red">1889.33</td>
+							<td><a href="#" class="a-btn"><i class="alt"></i>修改</a><a href="#" class="a-btn"><i class="del"></i>删除</a></td>
+						</tr>
+						<tr>
+							<td class="align-center"><input type="checkbox" /></td>
+							<td class="align-center">2</td>
+							<td><a href="#" class="a-hover">病人主索引接口</a></td>
+							<td>病人主索引接口</td>
+							<td><a href="#" class="a-hover">SJ199933224</a></td>
+							<td class="align-right">0.00</td>
+							<td></td>
+							<td>病人主索引接口</td>
+							<td class="align-right">0.00</td>
+							<td><a href="#" class="a-btn"><i class="alt"></i>修改</a><a href="#" class="a-btn"><i class="del"></i>删除</a></td>
+						</tr>
+						<tr>
+							<td class="align-center"><input type="checkbox" /></td>
+							<td class="align-center">3</td>
+							<td><a href="#" class="a-hover">病人主索引接口</a></td>
+							<td>病人主索引接口</td>
+							<td><a href="#" class="a-hover">SJ199933224</a></td>
+							<td class="align-right">0.00</td>
+							<td></td>
+							<td>病人主索引接口</td>
+							<td class="align-right">0.00</td>
+							<td><a href="#" class="a-btn"><i class="alt"></i>修改</a><a href="#" class="a-btn"><i class="del"></i>删除</a></td>
+						</tr>
+						<tr>
+							<td class="align-center"><input type="checkbox" /></td>
+							<td class="align-center">4</td>
+							<td><a href="#" class="a-hover">病人主索引接口</a></td>
+							<td>病人主索引接口</td>
+							<td><a href="#" class="a-hover">SJ199933224</a></td>
+							<td class="align-right money-green">-1333.5</td>
+							<td></td>
+							<td>病人主索引接口</td>
+							<td class="align-right money-green">-1333.5</td>
+							<td><a href="#" class="a-btn"><i class="alt"></i>修改</a><a href="#" class="a-btn"><i class="del"></i>删除</a></td>
+						</tr>
+						<tr>
+							<td class="align-center"><input type="checkbox" /></td>
+							<td class="align-center">5</td>
+							<td><a href="#" class="a-hover">病人主索引接口</a></td>
+							<td>病人主索引接口</td>
+							<td><a href="#" class="a-hover">SJ199933224</a></td>
+							<td class="align-right money-green">-1333.5</td>
+							<td></td>
+							<td>病人主索引接口</td>
+							<td class="align-right money-green">-1333.5</td>
+							<td><a href="#" class="a-btn"><i class="alt"></i>修改</a><a href="#" class="a-btn"><i class="del"></i>删除</a></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="custom">
+				<span><i class="set-btn"></i>设置</span>
+				<div class="field">
+					<div class="field-content fixed">
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<div class="page-number fixed">
+			<div class="page-num">
+				<p>每页显示<select><option>15</option></select>当前页为1至5记录</p>
+			</div>
+			<div class="num-page">
+				<div class="page-record">
+					<p>跳转到<input type="text" class="num-btn" />页<input type="button" value="GO" class="num-btn go-btn" /></p>
+				</div>
+				<div class="pages">
+					<a href="#">首页</a>
+					<a href="#">上一页</a>
+					<a href="#" class="page-bg num-click">1</a>
+					<a href="#" class="num-click">2</a>
+					<a href="#" class="num-click">3</a>
+					<a href="#" class="num-click">4</a>
+					<a href="#" class="num-click">...</a>
+					<a href="#" class="num-click">65</a>
+					<a href="#">下一页</a>
+					<a href="#">末页</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="member-foot frm-foot">
+		<p>Copyright © 2014-2016 By<a href="#">广东省药品交易中心</a>All Rights Reserved.</p>
+	</div>
+</body>
+</html>

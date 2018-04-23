@@ -1,0 +1,21 @@
+.drug-inf{min-width: 640px; padding: 36px 30px 78px 30px;}
+.table-text{width: 100%;padding: 0px;margin:0px;text-align: left;border:1px solid #dfdfdf;}
+.table-text tr td{padding: 0px 10px;height:38px;line-height:38px;border-right: 1px solid #ccc;border-bottom: 1px solid #ccc;word-break: keep-all;font-size: 14px;}
+.table-title{text-align: right;background-color: #e7eaec;}
+.listd-table{width:100%;padding: 0px;margin:0px;text-align: center;position: relative;border:1px solid #dfdfdf;}
+.listd-table tr th{font-size: 14px;font-weight: bold;color: #444;background-color: #e7eaec;text-align: center;cursor: pointer;}
+.listd-table tr th, .listd-table tr td{padding: 0px 10px;height:38px;line-height:38px;border-right: 1px solid #ccc;border-bottom: 1px solid #ccc;word-break: keep-all;}
+.listd-table tr{font-size: 14px;color: #3c3c3c;}
+.listd-table tr:hover{background-color: #d8f2fb;}
+.listd-table tr td a .details{display: inline-block;width: 16px;height: 16px;background: url(../images/details.png) no-repeat;vertical-align: middle;margin-right: 5px;}
+.listd-table tr td a:hover .details{background: url(../images/details-click.png) no-repeat;}
+.checked_tr{background-color: #d8f2fb!important;}
+.page-number{height:50px;line-height:50px;background-color: #fbfeff;border:1px solid #dfdfdf;border-top:none;margin: 0px;padding: 0px;overflow: hidden;}
+.page-num{float: left;font-size: 14px;color: #444;}
+.page-num select{height: 30px;line-height: 30px;}
+.page-num p {padding-left: 15px;margin:0px;}
+.page-num p select{margin:0px 10px 0px 5px;padding:4px 0px\9;*position: relative;*top:8px;*left: 6px;}
+.num-page{float: right;font-size: 14px;color: #444;padding-right:15px;}
+.num-page a{display:inline-block;padding: 0px 10px;border:1px solid #eaeaea;margin-left: -5px;height: 30px;line-height: 30px;background-color: #fff;color: #444;}
+.num-page a:hover{color: #fff;background-color: #019dd6;}
+.num-page .page-bg{color: #fff;background-color: #019dd6;}

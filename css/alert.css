@@ -1,0 +1,25 @@
+/*新增账号弹窗*/
+.add-number{width: 350px;background-color: #fff;border-radius: 10px;}
+.add-number h2{font-size: 16px;color: #58b9fd;background-color: #ecf5ff;line-height: 36px;text-align: center;border-top-right-radius: 10px;border-top-left-radius: 10px;}
+.add-content{width: 350px;padding: 0px 0px 0px 0px;}
+.add-content .fm-item{padding: 0px;margin-bottom: 10px;line-height: 26px;}
+.add-content .fm-item label{font-size:14px;color:#444;display:inline-block;min-width: 75px;text-align: right;margin-right: 8px;}
+.add-content .fm-item input{width: 214px;height: 26px;line-height: 26px;border: 1px solid #e7eaec;vertical-align: middle;padding: 6px;}
+.add-content .fm-item textarea{width: 214px;height: 38px;border: 1px solid #e7eaec;vertical-align: middle;}
+.add-content .fm-item label.error{display:block;line-height:18px;font-size:12px;color:#e35a53;padding-left: 80px;text-align: left;}
+.add-number .save{width:70px;height: 30px;line-height: 30px;background: #58b9fd;color: #fff;font-size: 14px;border-radius: 4px;margin-left: 142px;}
+/*角色改变弹窗*/
+.pop_box{background-color: #fff;width: 265px;text-align: center;border-radius: 10px;}
+.pop_box h2{font-size: 16px;line-height: 36px;text-align: center;color: #58b9fd;background-color: #ecf5ff;border-top-right-radius: 10px;border-top-left-radius: 10px;}
+.pop_box p{text-align: center;margin:0;}
+.pop_box p span{font-size: 14px;color: #444444;padding-right: 5px;}
+.pop_box p select{width: 165px;height: 30px;}
+.pop_box input[type="button"]{width: 70px;height: 30px;background-color: #e35a53;font-size: 14px;color: #fefefe;border-radius: 4px;}
+.pop_box input[type="button"].save{background-color: #58b9fd;margin-left: 32px;}
+/*重设密码框弹窗*/
+.pop_box .pwd p{margin: 0;}
+.pwd{margin: 0px auto 0 auto;width: 220px;}
+.pwd2{margin: 16px auto 0 auto;}
+.pwd p{text-align: left;font-size: 14px;color: #444444;padding-bottom: 5px;}
+.pop_box .pwd input{display: block;width: 100%;line-height: 26px;height: 26px;margin-bottom: 5px;padding: 6px;}
+.pop_box input[type="button"].pwd_save{background-color: #58b9fd;margin-top: 16px;}

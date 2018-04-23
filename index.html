@@ -1,0 +1,456 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>众思药品电子交易平台</title>
+<link rel="stylesheet" type="text/css" href="css/public.css"/><!-- 公告样式 -->
+<link rel="stylesheet" type="text/css" href="css/index.css"/><!-- 首页界面样式 -->
+<link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css"/><!-- 滚动条样式 -->
+<link rel="stylesheet" type="text/css" href="css/superfish.css"><!-- 三级菜单样式 -->
+<link rel="stylesheet" type="text/css" href="css/default.css"  /><!-- 弹出层样式 -->
+<link rel="stylesheet" type="text/css" href="css/alert.css"/><!-- content弹出样式 -->
+<script type="text/javascript" src="js/libs/jquery-1.8.3.min.js"></script><!-- 1.8.3jq库 -->
+<script type="text/javascript" src="js/module/menu.js"></script><!-- 主菜单js -->
+<script type="text/javascript" src="js/module/jquery.mCustomScrollbar.concat.min.js"></script><!-- 滚动条js -->
+<script type="text/javascript" src="js/module/superfish.js"></script><!-- 三级菜单js -->
+<script type="text/javascript" src="js/list-data.js"></script><!-- 主菜单js -->
+<script type="text/javascript" src="js/fun.js"></script><!-- 首页界面js -->
+<script src="js/module/artDialog.source.js"></script><!-- 弹出层js -->
+<script src="js/module/iframeTools.source.js"></script><!-- 弹出层js -->
+<script type="text/javascript">
+    function setPassword() {
+        art.dialog.open('page/setPassword.html', {
+            title: '修改登录密码', 
+            lock: true,
+            width:500,
+            ok: function () {},
+            cancelVal: '关闭',
+            cancel: true
+        });
+    }
+</script>
+</head>
+<body id="y_body">
+<div class="y_main">
+    <div class="D2_logo">
+        <a href="JavaScript:;">
+            <div class="D2_logo_lt"><img src="images/logo2.0.png"></div>
+            <div class="D2_logo_rt">买方平台系统</div>
+        </a>
+        <a class="D2_red" href="#"><img src="images/left_D.png"></a>
+        <a class="D2_red2" href="#"><img src="images/right_D.png"></a>
+    </div>
+    <div class="y_lt mCustomScrollbar light" data-mcs-theme="minimal-dark">
+        <div class="list-menu">
+            <ul class="dropdown">
+                <li>
+                    <a href="#"><img src="images/ctrl1.png"/>用户管理</a>
+                    <ul>
+                        <li>
+                            <a href="page/dataTable.html" target="main">
+                                <i class="iconfont icon-shouye"></i>
+                                <span>投诉列表</span>
+                            </a> 
+                        </li>
+                        <li>
+                            <a href="page/member_info.html" target="main">
+                                <i class="iconfont icon-shouye"></i>
+                                <span>会员注册信息页</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="page/financial-audit.html" target="main">
+                                <i class="iconfont icon-shouye"></i>
+                                <span>财务审核页</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="page/authority.html" target="main">
+                                <i class="iconfont icon-shouye"></i>
+                                <span>管理权限</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="page/newdist_agree.html" target="main">
+                                <i class="iconfont icon-shouye"></i>
+                                <span>新建配送协议</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="page/memberAudit.html" target="main">
+                                <i class="iconfont icon-shouye"></i>
+                                <span>会员审核列表</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="page/detail_query.html" target="main">
+                                <i class="iconfont icon-shouye"></i>
+                                <span>订单明细查询</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="page/page/protocol.html" target="main">
+                                <i class="iconfont icon-shouye"></i>
+                                <span>配送协议列表</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="page/create_agree.html" target="main">
+                                <i class="iconfont icon-shouye"></i>
+                                <span>创建合同</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="page/account_list.html" target="main">
+                                <i class="iconfont icon-shouye"></i>
+                                <span>账号列表</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="page/distributeAgree.html" target="main">
+                                <i class="iconfont icon-shouye"></i>
+                                <span>配送协议详情</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="page/contract.html" target="main">
+                                <i class="iconfont icon-shouye"></i>
+                                <span>添加合同列表</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="page/contract.html" target="main">
+                                <i class="iconfont icon-shouye"></i>
+                                <span>添加合同列表</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="page/contract.html" target="main">
+                                <i class="iconfont icon-shouye"></i>
+                                <span>添加合同列表</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="page/contract.html" target="main">
+                                <i class="iconfont icon-shouye"></i>
+                                <span>添加合同列表</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="page/contract.html" target="main">
+                                <i class="iconfont icon-shouye"></i>
+                                <span>添加合同列表</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="page/complaintList.html" target="main" data-href="page/contract.html">
+                                <i class="iconfont icon-shouye"></i>
+                                <span>添加合同列表</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="page/complaintList.html" target="main" data-href="page/contract.html">
+                                <i class="iconfont icon-shouye"></i>
+                                <span>添加合同列表</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><img src="images/ctrl2.png"/>订单管理</a>
+                    <ul>
+                        <li>
+                            <a href="#">合同列表</a>
+                            <ul>
+                                <li>
+                                    <a href="#">议价挂牌合同列表</a>
+                                </li>
+                                <li>
+                                    <a href="#">基药合同列表</a>
+                                </li>
+                                <li>
+                                    <a href="#">非基药合同列表</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">药品合同明细</a>
+                            <ul>
+                                <li>
+                                    <a href="#">议价挂牌合同列表</a>
+                                </li>
+                                <li>
+                                    <a href="#">基药合同列表</a>
+                                </li>
+                                <li>
+                                    <a href="#">非基药合同列表</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">廉洁合同列表</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><img src="images/ctrl3.png"/>合同管理</a>
+                    <ul>
+                        <li>
+                            <a href="#">响应订单</a>
+                        </li>
+                        <li>
+                            <a href="#">订单明细查询</a>
+                        </li>
+                        <li>
+                            <a href="#">退货管理</a>
+                            <ul>
+                                <li>
+                                    <a href="#">发货明细查询</a>
+                                </li>
+                                <li>
+                                    <a href="#">逾期未响应列表</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><img src="images/ctrl4.png"/>发票管理</a>
+                    <ul>
+                        <li>
+                            <a href="#">药品发票管理</a>
+                            <ul>
+                                <li>
+                                    <a href="#">创建发票</a>
+                                </li>
+                                <li>
+                                    <a href="#">取消与修改发票</a>
+                                </li>
+                                <li>
+                                    <a href="#">普通发票信息查询</a>
+                                </li>
+                                <li>
+                                    <a href="#">货票同行发票查询</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">配送发票管理</a>
+                            <ul>
+                                <li>
+                                    <a href="#">发票信息查询</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><img src="images/ctrl5.png"/>发货管理</a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/ctrl6.png"/>投诉管理</a>
+                    <ul>
+                        <li>
+                            <a href="#">投诉列表</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="y_lt_small">
+        <ul class="sf-menu">
+            <li class="current">
+                <a href="#">
+                    <img src="images/ctrl1_D.png">
+                    <p>角色管理</p>
+                </a>
+                <ul>
+                    <li>
+                        <a href="#aa">产品注册申诉</a>
+                        <ul>
+                            <li class="current"><a href="#">产品注册申诉</a></li>
+                            <li><a href="#aba">产品注册申诉</a></li>
+                            <li><a href="#abb">产品注册申诉</a></li>
+                            <li><a href="#abc">产品注册申诉</a></li>
+                            <li><a href="#abd">产品注册申诉</a></li>
+                        </ul>
+                    </li>
+                    <li class="current">
+                        <a href="#ab">产品注册申诉</a>
+                        <ul>
+                            <li class="current"><a href="#">产品注册申诉</a></li>
+                            <li><a href="#aba">产品注册申诉</a></li>
+                            <li><a href="#abb">产品注册申诉</a></li>
+                            <li><a href="#abc">产品注册申诉</a></li>
+                            <li><a href="#abd">产品注册申诉</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">产品注册申诉</a>
+                        <ul>
+                            <li><a href="#">产品注册申诉</a></li>
+                            <li><a href="#">产品注册申诉</a></li>
+                            <li><a href="#">产品注册申诉</a></li>
+                            <li><a href="#">产品注册申诉</a></li>
+                            <li><a href="#">产品注册申诉</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">产品注册申诉</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/ctrl2_D.png">
+                    <p>角色管理</p>
+                </a>
+                <ul>
+                    <li>
+                        <a href="#aa">menu</a>
+                    </li>
+                    <li class="current">
+                        <a href="#ab">menu item</a>
+                        <ul>
+                            <li class="current"><a href="#">me</a></li>
+                            <li><a href="#aba">menu item</a></li>
+                            <li><a href="#abb">menu item</a></li>
+                            <li><a href="#abc">menu item</a></li>
+                            <li><a href="#abd">menu item</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">men</a>
+                        <ul>
+                            <li><a href="#">menu item</a></li>
+                            <li><a href="#">menu item</a></li>
+                            <li><a href="#">menu item</a></li>
+                            <li><a href="#">menu item</a></li>
+                            <li><a href="#">menu item</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">me</a>
+                        <ul>
+                            <li><a href="#">menu item</a></li>
+                            <li><a href="#">menu item</a></li>
+                            <li><a href="#">menu item</a></li>
+                            <li><a href="#">menu item</a></li>
+                            <li><a href="#">menu item</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/ctrl3_D.png">
+                    <p>角色管理</p>
+                </a>
+                <ul>
+                    <li>
+                        <a href="#">menu item</a>
+                        <ul>
+                            <li><a href="#">short</a></li>
+                            <li><a href="#">short</a></li>
+                            <li><a href="#">short</a></li>
+                            <li><a href="#">short</a></li>
+                            <li><a href="#">short</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">menu item</a>
+                        <ul>
+                            <li><a href="#">menu item</a></li>
+                            <li><a href="#">menu item</a></li>
+                            <li><a href="#">menu item</a></li>
+                            <li><a href="#">menu item</a></li>
+                            <li><a href="#">menu item</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">menu item</a>
+                        <ul>
+                            <li><a href="#">menu item</a></li>
+                            <li><a href="#">menu item</a></li>
+                            <li><a href="#">menu item</a></li>
+                            <li><a href="#">menu item</a></li>
+                            <li><a href="#">menu item</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">menu item</a>
+                        <ul>
+                            <li><a href="#">menu item</a></li>
+                            <li><a href="#">menu item</a></li>
+                            <li><a href="#">menu item</a></li>
+                            <li><a href="#">menu item</a></li>
+                            <li><a href="#">menu item</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">menu item</a>
+                        <ul>
+                            <li><a href="#">menu item</a></li>
+                            <li><a href="#">menu item</a></li>
+                            <li><a href="#">menu item</a></li>
+                            <li><a href="#">menu item</a></li>
+                            <li><a href="#">menu item</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/ctrl4_D.png">
+                    <p>角色管理</p>
+                </a>
+            </li>  
+            <li>
+                <a href="#">
+                    <img src="images/ctrl5_D.png">
+                    <p>角色管理</p>
+                </a>
+            </li> 
+            <li>
+                <a href="#">
+                    <img src="images/ctrl6_D.png">
+                    <p>角色管理</p>
+                </a>
+            </li>  
+        </ul>
+    </div>
+    <div class="y_rt">
+        <div class="D2_rt_top">
+            <div class="D2_rt_type">欢迎您登录！中山市医药有限公司-（配送方会员）</div>
+            <div class="D2_rt_menber">
+                <ul class="D2_rt_ul">
+                    <li><a href="#">帮助</a></li>
+                </ul>
+                <div class="D2_rt_user">
+                    <div class="D2_user_name">会员名字<i><img src="images/tree_select.png"></i></div>
+                    <div class="D2_user_pic"><img src="images/login_pic.png"></div>
+                    <div class="D2_user_hide">
+                        <ul>
+                            <li><a href="#">修改会员资料</a></li>
+                            <li><a href="JavaScript:;" onclick="setPassword()">修改登录密码</a></li>
+                            <li><a href="#">自定义常用功能菜单</a></li>
+                        </ul>
+                        <div class="D2_exit"><a href="#">退出</a></div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+        <div class="y_iframe">
+            <iframe class="tab_iframe" src="page/dataTable.html" name="main" frameborder="0" width="100%" height="100%"></iframe>
+        </div>
+    </div>
+</div>
+<!-- 延迟加载开始 -->
+    <div class="overlay"></div>
+    <div id="AjaxLoading" class="showbox">
+        <div class="loadingWord"><img src="../images/timg.gif" width="32">加载中，请稍候...</div>
+    </div>
+<!-- 延迟加载结束 -->
+</body>
+</html>

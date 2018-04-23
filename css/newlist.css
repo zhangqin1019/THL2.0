@@ -1,0 +1,44 @@
+/*新建配送列表样式*/
+.newlist{padding: 36px 30px 78px 30px;*padding: 36px 30px 30px 30px;min-width: 640px;}
+.fm-item{float: left;width: 50%;*width: 49.9%;height: 36px;line-height: 36px;margin-bottom: 25px;padding: 0px;font-size: 14px;}
+.fm-title{float: left;text-align: right;color: #444;width: 25%;height: 36px;min-width: auto;margin-right: 4%;}
+.fm-text{float: left;height: 36px;line-height: 36px;width: 67%;padding: 0px;position: relative;}
+.fm-input{width: 96%;height:36px;line-height: 36px;padding: 0px 2%;vertical-align: middle;}
+.fm-text select{width: 100%;height: 36px;line-height: 36px;vertical-align: middle;padding: 6px 0px\9;}
+.fm-text textarea{width: 248%;height: 60px;padding:0 2%;}
+.fm-text span{margin:0 16% 0 2%;}
+.fm-area .fm-title{height: 60px;line-height: 60px;}
+.fm-text a{position: absolute;right: 9px;top: 5px;}
+.fm-area{height: 60px;}
+.fm-address{position: relative;}
+.input-address{position: absolute;left: 2px;top: 3px;width: 88%;border: 0px;height: 32px;line-height: 32px;*height: 20px;*line-height: 20px;*top: 2px;}
+
+/*新建配送列表样式*/
+.newList{padding: 36px 30px 78px 30px;}
+.listd-table{width:100%;padding: 0px;margin:0px;text-align: left;border:1px solid #dfdfdf;}
+.listd-table tr th{font-size: 14px;font-weight: bold;color: #444;background-color: #e7eaec;text-align: center;cursor: pointer;}
+.listd-table tr th, .listd-table tr td{padding: 0px 10px;height:38px;line-height:38px;border-right: 1px solid #ccc;border-bottom: 1px solid #ccc;word-break: keep-all;}
+.listd-table tr{font-size: 14px;color: #3c3c3c;}
+.listd-table tr:hover{background-color: #d8f2fb;}
+.align-center{text-align: center;}
+.checked_tr{background-color: #d8f2fb!important;}
+.page-number{height:50px;line-height:50px;background-color: #fbfeff;border:1px solid #dfdfdf;border-top:none;margin: 0px;padding: 0px;overflow: hidden;}
+.page-number select{height: 30px;line-height: 30px;}
+.page-num{float: left;font-size: 14px;color: #444;}
+.page-num p {padding-left: 15px;margin:0px;}
+.page-num p select{margin:0px 10px 0px 5px;padding:4px 0px\9;*position: relative;*top:8px;*left: 6px;}
+.num-page{float: right;font-size: 14px;color: #444;padding-right:15px;}
+.page-record{float: left;margin-right: 15px;}
+.page-record p{font-size: 14px;color: #444;}
+.pages{float: left;}
+.pages a{display:inline-block;padding: 0px 10px;border:1px solid #eaeaea;margin-left: -5px;height: 30px;line-height: 30px;background-color: #fff;color: #444;}
+.pages a:hover{color: #fff;background-color: #019dd6;}
+.pages .page-bg{color: #fff;background-color: #019dd6;}
+.num-btn{width: 50px;height: 30px;line-height: 30px;border-radius: 5px;outline: none;margin: 0px 5px;border:1px solid #cccccc;vertical-align: middle;text-align: center;}
+.go-btn{text-align: center;background-color: #cccccc;color: #fff;border:1px solid #cccccc;cursor: pointer;}
+.go-btn:hover{background-color: #019dd6;border:1px solid #019dd6;}
+.fm-text .menber_upload{position: absolute;top:0;right: auto;left: 0; width: 90px;height: 36px;display: block;float: left;text-align: center;border-radius: 5px;margin-right: 6px;color: #fff;background: url(../images/upload.png) no-repeat #9b9b9b 18px 6px;padding-left: 18px;}
+.fm-text .menber_upload:hover{color: #fff;background: url(../images/upload.png) no-repeat #019dd6 18px 6px;}
+.fm-text .menber_see{width:90px;height: 36px;display: block;float: left;text-align: center;background-color: #9b9b9b;border-radius: 5px;color: #fff;background: url(../images/see.png) no-repeat #9b9b9b 6px 6px;padding-left: 18px;}
+.fm-text .menber_see:hover{color: #fff;background: url(../images/see.png) no-repeat #019dd6 18px 6px;}
+.fm-text .menber_file{float: left;width:108px;height: 36px;display: block;border-radius: 5px;position: absolute;cursor: pointer;filter:alpha(opacity=0); -moz-opacity:0; -khtml-opacity:0; opacity: 0;position: relative;top:0px;}

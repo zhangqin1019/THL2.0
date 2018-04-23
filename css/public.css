@@ -1,0 +1,118 @@
+@charset "utf-8";
+/*reset.css*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,hr,fieldset,input,textarea,select,label,p,blockquote,th,td,button {margin:0px;padding:0px;}
+table {border-collapse:collapse;border-spacing:0;}
+fieldset,img {border:none;}
+ol,ul {list-style:none;}
+caption,th {text-align:left;}
+h1,h2,h3,h4,h5,h6{font-family: "微软雅黑";}
+.fixed:after{content: ""; display: block; height: 0; clear: both; visibility: hidden;}
+.fixed{zoom:1;}
+*html{background-image:url(about:blank);background-attachment:fixed;}
+::-moz-selection{background:#4ba9fa ; color:#fff;}
+::selection {background:#4ba9fa ; color:#fff;}
+/*公共样式*/
+html {background:#fff;font-family: "微软雅黑";}
+a {text-decoration:none; color:#1b191b; cursor:pointer;}
+input,button,select,textarea{font-family: "微软雅黑";outline: none;resize: none;}
+button {cursor:pointer;overflow-x:visible;border: none}
+a:hover {text-decoration: none;color: #1b191b;}
+input[type="button"],input[type="submit"]{border: none;cursor: pointer;}
+
+/*验证提示*/
+.f-tip{line-height:18px;font-size:12px;margin-top:6px;text-align: left;position: absolute;top: 40px;left:0;color: #e35a53;}
+/*美化侧栏导航滚动条*/
+*{  
+    scrollbar-face-color:#F3F3F3; /*面子*/  
+    scrollbar-arrow-color:#C0C0C0; /*箭头*/  
+    scrollbar-3dlight-color:#C0C0C0; /*最外左*/  
+    scrollbar-highlight-color:#FFFFFF; /*左二*/  
+    scrollbar-shadow-color:#FFFFFF; /*右二*/  
+    scrollbar-darkshadow-color:#C0C0C0; /*右一*/  
+    scrollbar-track-color:#F3F3F3; /*滑道*/  
+}  
+/*滚动条整体*/  
+::-webkit-scrollbar{  
+    width:12px; /*滚动条宽度*/  
+}  
+/*滚动条按钮*/  
+::-webkit-scrollbar-button {  
+
+}  
+::-webkit-scrollbar-track{  
+    background-color:#F3F3F3;  /*滑道全部*/  
+}  
+::-webkit-scrollbar-track-piece{  
+    background-color:#F3F3F3;  /*滑道*/  
+    -webkit-border-radius:4px; /*滑道圆角宽度*/  
+}  
+::-webkit-scrollbar-thumb{  
+    background-color:#F3F3F3; /*滑动条表面*/  
+    border:solid 1px #C0C0C0; /*滑动条边框*/  
+    border-radius:4px;  /*滑动条圆角宽度*/  
+}  
+/*横竖滚动条交角*/  
+::-webkit-scrollbar-corner {  
+    background-color: #F3F3F3;  
+}  
+/*横竖滚动条交角图案*/  
+::-webkit-resizer {  
+    /*background-image: url(/public/img/resizer-inactive.png);*/  
+   background-repeat: no-repeat;  
+   background-position: bottom right;  
+}  
+/*鼠标滑过滑动条*/  
+::-webkit-scrollbar-thumb:hover{  
+    background-color:#F3F3E0;  
+}  
+/*右侧title公共*/
+.list-content{margin: 10px;background-color: #fff;min-width:960px;border:1px solid #ccc;padding: 10px;font-family: "微软雅黑";}
+.table-title{height: 44px;line-height: 44px;border-bottom: 1px solid #d2d2d2;}
+.title-right span{padding: 0px 5px;cursor: pointer;color: #444;}
+.title-right span strong{color: #019dd6;font-weight: normal;}
+.title-right img{vertical-align: middle;}
+.title-right{float:left;font-size: 14px;padding-right: 10px;line-height: 44px;}
+/*注册前头部尾部公共*/
+.member-top{margin:0px auto;height:60px;background-color: #fff;}
+.member-title{width: 1022px;height:60px;background-color: #fff;margin:0px auto;}
+.mem-lt{float: left;}
+.mem-lt img{vertical-align: middle;margin-top: 14px;}
+.mem-rt{float: right;}
+.mem-rt a{display: inline-block;height: 60px;line-height: 60px;font-size: 14px;color: #444;}
+.mem-rt a:hover{color: #2ba8d6;}
+.mem-rt span{color: #cdcdcd;padding: 0px 5px;}
+.member-foot{min-width: 960px;margin:0px auto 30px auto;}
+.member-foot p{font-size: 12px;color: #3c3c3c;text-align: center;}
+.member-foot p a{color: #2ba8d6;}
+.frm-foot{margin:0px auto 0px auto;}
+/*所有表单元素的样式*/
+.input-pub{-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;font-size: 14px;border:1px solid #ccc;color: #444;}
+.input-pub:focus{outline: none;border-color:#c4dcff;box-shadow:inset 0px 1px 1px rgba(0,0,0,.075), 0 0 5px rgba(59,180,242,.3);-webkit-box-shadow:inset 0px 1px 1px rgba(0,0,0,.075), 0 0 5px rgba(59,180,242,.3);}
+/*页面延迟加载*/
+a,img{border:0;}
+.demo{margin:100px auto 0 auto;width:400px;text-align:center;font-size:18px;}
+.demo .action{color:#3366cc;text-decoration:none;font-family:"微软雅黑","宋体";}
+.overlay{position:fixed;top:0;right:0;bottom:0;left:0;z-index:998;width:100%;height:100%;_padding:0 20px 0 0;background:#f6f4f5;opacity: 0.7;filter:alpha(opacity=0.7);}
+.showbox{position:fixed;top:44%;left:49%;z-index:9999;opacity:1;filter:alpha(opacity=1);margin-left:-80px;}
+ .showbox,.overlay{}
+#AjaxLoading{border:1px solid #8CBEDA;color:#37a;font-size:12px;font-weight:bold;}
+#AjaxLoading div.loadingWord{width:180px;height:50px;line-height:50px;border:2px solid #D6E7F2;background:#fff;}
+#AjaxLoading img{margin:10px 15px;float:left;display:inline;}
+/*表单验证*/
+s.error{font-size: 12px;color: #e35a53;display:block;line-height: 18px;position: absolute;text-decoration:none;}
+.menber_con .menber_term .menber_li .error{left:115px;top: 35px;}
+.fm-text .error{left:0px;top:40px;}
+.menber_con .modify_hide .menber_li .error{left:38%;}
+#pass .error{top:64px;}
+.p_error{display:none;position: absolute; background-color: #fff9f9;border: 1px solid #eddada;-moz-border-radius: 5px;-webkit-border-radius: 5px;border-radius: 5px;color: #e35a53;font-size: 14px;height: 28px;line-height: 28px;width:444px;width:443px\9;padding: 0 10px;text-align: center;margin-top: 10px;}
+
+.menber_but2:after {clear: both;content: "";display: table;}
+.menber_but2{text-align: center;width: 100%;position: fixed;left: 0;bottom: 0;background-color: #fff;left: -14px;*left:-14px;padding:3px 8px;}
+.menber_but2 input{float: right; background-color:#019dd6; border-radius: 5px; color: #fff;cursor: pointer;font-size: 14px;outline: medium none;text-align: center;padding: 8px 8px;*padding: 5px 2px;*min-height:30px;margin: 8px 0px;margin-right: 16px;min-width: 65px;}
+.menber_but2 input:hover{filter:alpha(opacity=90); -moz-opacity:0.9; -khtml-opacity:0.9; opacity: 0.9;}
+.menber_upload{width: 88px;height: 36px;display: block;float: left;text-align: center;border-radius: 5px;margin-right: 20px;color: #fff;background: url(../images/upload.png) no-repeat #9b9b9b 15px 6px;padding-left: 18px;}
+.menber_see{width: 88px;height: 36px;display: block;float: left;text-align: center;background-color: #9b9b9b;border-radius: 5px;color: #fff;background: url(../images/see.png) no-repeat #9b9b9b 15px 6px;padding-left: 18px;}
+.menber_file{float: left;width: 106px;height: 36px;display: block;border-radius: 5px;position: absolute;left: 0;top: 0;cursor: pointer;filter:alpha(opacity=0); -moz-opacity:0; -khtml-opacity:0; opacity: 0;}
+.menber_upload:hover{color: #fff;background: url(../images/upload.png) no-repeat #019dd6 15px 6px;}
+.menber_see:hover{color: #fff;background: url(../images/see.png) no-repeat #019dd6 15px 6px;}
+.menber_up{float: left;position: relative;}

@@ -1,0 +1,52 @@
+/*后台管理系统框架样式*/
+.y_lt{background-color: #2c2d2e;}
+.list-menu ul{margin: 0;padding: 0}
+.dropdown {width: 100%;font-family: "微软雅黑", sans-serif;font-size: 14px;}
+.dropdown li{position: relative;}
+.dropdown > li{border-top:2px solid #2b3a4d;}
+.dropdown > li > a{padding-left: 29px;display: block;background: url(../images/white-drop.png) no-repeat #2c2d2e 160px 16px;height: 40px;line-height: 40px;text-decoration: none;text-transform: uppercase;color: #fff;border-bottom: 1px solid #1e2c3d;width: 170px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.dropdown > li > a img{vertical-align: middle;margin-right: 8px;}
+.dropdown > li > ul{width: 100%;margin: 0;}
+.dropdown > li > ul li{background:#393c3b;line-height: 40px;margin: 0;}
+.dropdown > li > ul li a {padding-left: 30px;background: url(../images/white-drop.png) no-repeat 160px 16px #393c3b;color: #c9c9c9;display: block;width: 170px;height:40px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.dropdown > li > ul li > ul li{background:#414242;}
+.dropdown > li > ul li > ul li a{padding-left: 30px;background:#414242;font-size: 12px;color: #fff;width: 170px;height:40px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;display: block;}
+.dropdown li .hover_active{color: #fff;}
+.dropdown li .click_active{color: #2c74d7;background: url(../images/blue-drop.png) no-repeat 160px 18px #242425;}
+.dropdown li .hover2_active{color: #c9c9c9;}
+.dropdown li .click2_active{color: #2c74d7;background:url(../images/blue-drop.png) no-repeat 160px 18px #242425;}
+.dropdown li .hover3_active{color: #fff;}
+.dropdown li .click3_active{color: #4c8de8;background-color:#38567e;}
+.D2_logo{background-color: #2c74d7;}
+.D2_user_hide ul li a:hover{background-color: #2c74d7;}
+/*后台管理系统投诉列表、系统公告样式*/
+.title-right span strong{color: #4c8de8;}
+.search-right .asq{background-color: #2c74d7;}
+.search-right span:hover{background-color: #2c74d7;}
+.search-btn input{background-color:#2c74d7;}
+.search-btn2 input{background-color:#2c74d7;}
+.listd-table tr a:hover{color:#2c74d7;}
+.listd-table tr .a-hover{color: #2c74d7;}
+.checked_tr{background-color:#ddebfd!important;}
+.custom:hover{background-color:#2c74d7;}
+.field-content label:hover{color:#2c74d7;}
+.pages a:hover{background-color: #2c74d7;}
+.pages .page-bg{background-color: #2c74d7;}
+.go-btn:hover{background-color: #2c74d7;border:1px solid #2c74d7;}
+/*后台管理系统权限列表样式*/
+.btn-bg{background-color: #2c74d7;border:1px solid #2c74d7;}
+.edit_add{background-color: #2c74d7;}
+/*后台管理系统图表页面样式*/
+.inf-right a:hover{background-color:#2c74d7;}
+/*后台管理系统新建配送列表、药品信息样式*/
+.menber_but  input{background-color:#2c74d7;}
+.num-page a:hover{background-color: #2c74d7;}
+.num-page .page-bg{background-color: #2c74d7;}
+/*后台管理系统修改会员资料样式*/
+.modify-rt h3 span{color: #2c74d7;}
+.modify-tel .tel-rt p a{color: #2c74d7;}
+.modify-list ul li .modify-edit{color: #2c74d7;}
+.modify-list ul li .modify-up{color: #2c74d7;}
+.modify-list .menber_but input{background-color: #2c74d7;}
+.menber_see:hover{background-color: #2c74d7;}
+

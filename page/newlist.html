@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>新建配送列表</title>
+	<link rel="stylesheet" type="text/css" href="../css/public.css"/><!-- 公告样式 -->
+	<link rel="stylesheet" type="text/css" href="../css/newlist.css"/><!-- 页面样式 -->
+	<link rel="stylesheet" type="text/css" href="../css/citySet.css"/><!-- 城市选择样式 -->
+	<script type="text/javascript" src="../js/libs/jquery-1.8.3.min.js"></script><!-- 1.8.3jq库 -->
+	<script type="text/javascript" src="../js/module/Popt.js"></script><!-- 城市选择js -->
+	<script type="text/javascript" src="../js/module/cityJson.js"></script><!-- 城市选择js -->
+	<script type="text/javascript" src="../js/module/citySet.js"></script><!-- 城市选择js -->
+	<script type="text/javascript">
+		$(function(){
+			$("#city").click(function (e) {
+				SelCity(this,e);
+			});
+		});
+	</script>
+</head>
+<body>
+<div class="newlist fixed">
+	<div class="fm-item fixed">
+		<div class="fm-title">卖方会员</div>
+		<div class="fm-text">
+			<input type="text" class="fm-input input-pub"/>
+		</div>
+	</div>
+	<div class="fm-item fixed">
+		<div class="fm-title">协议类型</div>
+		<div class="fm-text">
+			<select class="input-pub">
+				<option>请选择</option>
+			</select>
+		</div>
+	</div>
+	<div class="fm-item fixed">
+		<div class="fm-title">药品列表</div>
+		<div class="fm-text">
+			<input type="text" class="fm-input input-pub"/>
+			<a href="#"><img src="../images/search.png"></a>
+		</div>
+	</div>
+	<div class="fm-item fixed">
+		<div class="fm-title">配送企业</div>
+		<div class="fm-text">
+			<select class="input-pub">
+				<option>请选择</option>
+			</select>
+		</div>
+	</div>
+	<div class="fm-item fixed">
+		<div class="fm-title">状态</div>
+		<div class="fm-text">
+			<select class="input-pub">
+				<option>请选择</option>
+			</select>
+		</div>
+	</div>
+	<div class="fm-item fixed">
+		<div class="fm-title">添加附件</div>
+		<div class="fm-text">
+			<a class="menber_upload" href="JavaScript:;">上传</a>
+			<input type="file" class="menber_file"/>
+		</div>
+	</div>
+	<div class="fm-item fixed">
+		<div class="fm-title">收货地址</div>
+		<div class="fm-text fm-address">
+			<select class="input-pub">
+				<option></option>
+			</select>
+			<input type="text" class="fm-input input-address" id="city"/>
+		</div>
+	</div>
+	<div class="fm-item fixed">
+		<div class="fm-title">默认配送地址</div>
+		<div class="fm-text">
+			<input type="radio"/><span>是</span>
+			<input type="radio"/>否
+		</div>
+	</div>
+	<div class="fm-item fm-area fixed">
+		<div class="fm-title">备注</div>
+		<div class="fm-text">
+			<textarea class="input-pub"></textarea>
+		</div>
+	</div>
+</div>
+<div class="menber_but2">
+	<input class="menber_prev" value="上一步" type="button">
+	<input class="menber_next" value="下一步" type="button">
+	<input class="menber_sub" value="提 交" type="button">
+</div>
+</body>
+</html>
